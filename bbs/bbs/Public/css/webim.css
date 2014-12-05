@@ -1,0 +1,12 @@
+#webim {
+	background: url("http://www.itcast.cn/images/webim/bgTop.gif") no-repeat 0px 0px rgb(255, 255, 255); width: 280px; height: auto; right: 0px; bottom: 0px; overflow: hidden; position: fixed; z-index: 999; _position: absolute;
+}
+#webim .dlstyle {
+	padding: 0px 4px; border: 1px solid rgb(182, 207, 223); width: 270px; height: auto; line-height: 24px; overflow: hidden; font-size: 12px;
+}
+#webim .dlstyle .dtstyle {
+	width: 270px; height: 24px; overflow: hidden; position: relative;
+}
+#webim #webimclosebutton {
+	background: url("http://www.itcast.cn/images/webim/btn.gif") no-repeat 0px 0px; top: 0px; width: 42px; height: 15px; right: 0px; line-height: 999em; overflow: hidden; position: absolute; cursor: pointer;
+}
