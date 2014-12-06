@@ -14,14 +14,13 @@
 			<input type="password" id="psd" name="psd"/>
 			<input type="" value="" id="verify" name="verify"/>
                         <p class="top15 captcha" id="captcha-container">       
-                    <img width="30%" class="left15" height="40" margin-left='500' alt="验证码" src="<?php echo U('Home/Index/verify_c',array());?>" title="点击刷新">
+                   
                   </p>
 			<input type="submit" id="sub" value=""/>
 			<!-- 验证码 -->
 			<img src="" id="verify_img" />
 		</form>
 		<div class="four_bj">
-			
 			<p class="f_lt"></p>
 			<p class="f_rt"></p>
 			<p class="f_lb"></p>

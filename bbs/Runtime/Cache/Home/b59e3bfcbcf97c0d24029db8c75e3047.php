@@ -5,13 +5,13 @@
 <meta name="keywords" content="php培训,php教程,php视频,php下载,php视频教程" />
 <meta name="description" content="php培训的龙头老大,口碑最好的php培训机构,进来看看同学们的呐喊，就会知道我们是个怎么样的学校,问天下php培训机构谁与争锋?php培训课程内容包含目前最流行的zendframework、thinkphp框架、ECShop、dedecms等产品的二次开发" />
 <title>传智播客PHP学院官网-北京PHP培训_PHP网站开发培训_PHP程序员培训学校</title>
-<link href="./Public/css/css.css" type="text/css" rel="stylesheet" />
-<link href="./Public/css/nav_main.css" type="text/css" rel="stylesheet" />
-<link href="./Public/css/imageswitch.css" type="text/css" rel="stylesheet" />
-<link href="./Public/css/webim.css" type="text/css" rel="stylesheet" />
+<link href="/bbs/Public/css/css.css" type="text/css" rel="stylesheet" />
+<link href="/bbs/Public/css/nav_main.css" type="text/css" rel="stylesheet" />
+<link href="/bbs/Public/css/imageswitch.css" type="text/css" rel="stylesheet" />
+<link href="/bbs/Public/css/webim.css" type="text/css" rel="stylesheet" />
 <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" /> 
-<script type="text/javascript" src="./Public/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="./public/js/imageschange.js"></script>
+<script type="text/javascript" src="/bbs/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/bbs/Public/js/imageschange.js"></script>
 <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
 </head>
@@ -20,13 +20,13 @@
 	<div id="header">
 	<!-- 页面顶部 -->
 <div class="top1">
-	<p class="fl" style="background:url(./public/images/hot.png) 107px 10px no-repeat; padding-right:35px;"><span class="blue">专业的IT培训机构！</span></p>
+	<p class="fl" style="background:url(/bbs/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;"><span class="blue">专业的IT培训机构！</span></p>
 	<p class="fr"><a href="http://www.itcast.cn/channel/job.shtml" target="_blank">就业宣言</a><a href="http://www.itcast.cn/channel/flow.shtml" target="_blank">报名流程</a><a href="http://open.itcast.cn" target="_blank">免费公开课</a><a href="http://dvd.itcast.cn" target="_blank">免费学习光盘</a><a href="http://www.itcast.cn/channel/book.shtml" target="_blank">原创教材</a><a href="http://bbs.itcast.cn/zine.php" target="_blank">传智特刊</a><a target="_blank" href="http://www.itcast.cn/channel/personnel.shtml">人才服务</a><a href="http://bbs.itcast.cn" target="_blank">技术论坛</a></p>
 </div>
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="http://www.itcast.cn"><img src="./Public/images/logo.gif" alt="传智播客php培训学院" border="0"  class="png"/></a></h1>
+		<h1 class="fl"><a href="http://www.itcast.cn"><img src="/bbs/Public/images/logo.gif" alt="传智播客php培训学院" border="0"  class="png"/></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -39,7 +39,7 @@
 <p><a href="http://xa.itcast.cn" target="_blank">西安校区</a></p>
 <!-- 校区 --> 
 		</div>
-		<p class="fr"><img src="./public/images/topword.gif" alt="改变中国教育，我们正在行动..." class="png"/></p>
+		<p class="fr"><img src="/bbs/Public/images/topword.gif" alt="改变中国教育，我们正在行动..." class="png"/></p>
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
@@ -48,7 +48,7 @@
 	<li class="widt"><a href="http://php.itcast.cn/php/video.shtml" id="nav_videodl">PHP视频下载</a> </li>
     <li id="nav_personnel"><a href="http://www.itcast.cn/channel/personnel.shtml">人才服务</a></li>
     <li id="nav_life"><a href="http://www.itcast.cn/channel/campus.shtml">校园生活</a> </li>
-    <li id="nav_teacher"><a href="http://php.itcast.cn/php/teacher.shtml">师资力量</a> </li>
+    <li id="nav_teacher"><a href="<?php echo U('Shizi/index');?>">师资力量</a> </li>
     <li id="nav_job"><a href="http://php.itcast.cn/php/jyjb.shtml">就业信息</a> </li>
     <li id="nav_flow"><a href="http://www.itcast.cn/channel/flow.shtml">报名流程</a> </li>
     <li id="nav_book"><a href="http://www.itcast.cn/channel/book.shtml">原创教材</a> </li>
@@ -65,15 +65,15 @@ class="bds_tqq">腾讯微博</A><A class="bds_tsina">新浪微博</A><A
 class="bds_tieba">百度贴吧</A><A class="shareCount"></A></DIV><!-- Baidu share END 需在页面底部添加baidushare.js -->
 <DIV 
 style="padding-left: 60px; float: left; _padding-top: 8px;"><B>其它学院入口：</B><IMG 
-src="./Public/images/sanjiao.jpg"> <A href="http://java.itcast.cn/" 
-target="_blank">java学院</A> <IMG src="./Public/images/sanjiao.jpg"> 
-<A href="http://net.itcast.cn/" target="_blank">.net学院</A><IMG src="./Public/images/sanjiao.jpg"> 
-<A href="http://ios.itcast.cn/">ios学院</A> <IMG src="./Public/images/sanjiao.jpg"> 
-<A href="http://c.itcast.cn/">c/c++学院</A><IMG src="./Public/images/sanjiao.jpg"> 
+src="/bbs/Public/images/sanjiao.jpg"> <A href="http://java.itcast.cn/" 
+target="_blank">java学院</A> <IMG src="/bbs/Public/images/sanjiao.jpg"> 
+<A href="http://net.itcast.cn/" target="_blank">.net学院</A><IMG src="/bbs/Public/images/sanjiao.jpg"> 
+<A href="http://ios.itcast.cn/">ios学院</A> <IMG src="/bbs/Public/images/sanjiao.jpg"> 
+<A href="http://c.itcast.cn/">c/c++学院</A><IMG src="/bbs/Public/images/sanjiao.jpg"> 
 <A href="http://icd.itcast.cn/" target="_blank">网页平面设计学院</A></DIV></DIV>
 <DIV style="margin-top: 3px;" id="left" class="fl">
 <DIV><IMG 
-src="./Public/images/lefttop.gif"></DIV>
+src="/bbs/Public/images/lefttop.gif"></DIV>
 <DIV class="left_content2">
 <H4 class="title1"><SPAN style="padding-right: 20px; font-size: 14px; float: right;">今天我终于来到了心中向往已久的神圣学府--传智播客，开始了改变命运的征途</SPAN><SPAN 
 class="STYLE3">我们开学啦</SPAN></H4>
@@ -83,13 +83,13 @@ class="STYLE3">我们开学啦</SPAN></H4>
 <UL id="idSlider2" class="slider slider2">
   <LI><A href="http://php.itcast.cn/subject/phpwzlx/bbs.shtml" 
   target="_blank"><IMG style="width: 297px; height: 216px;" alt="王者来袭--只做中国PHP培训界的领航者!" 
-  src="./Public/images/20140507122631634.jpg"></A></LI>
+  src="/bbs/Public/images/20140507122631634.jpg"></A></LI>
   <LI><A href="http://php.itcast.cn/news/20140904/1456540144.shtml?yuanchao" 
   target="_blank"><IMG style="width: 297px; height: 216px;" alt="【精英访谈】PHP袁超：叛逆少年的成长" 
-  src="./Public/images/20140902180947196.jpg"></A></LI>
+  src="/bbs/Public/images/20140902180947196.jpg"></A></LI>
   <LI><A href="http://php.itcast.cn/subject/phpzly/bbs.html" 
   target="_blank"><IMG style="width: 297px; height: 216px;" alt="学PHP编程,不做孬种程序员" 
-  src="./Public/images/20140528133631480.jpg"></A></LI>
+  src="/bbs/Public/images/20140528133631480.jpg"></A></LI>
 </UL>
 <UL id="idNum2" class="num">
   <LI>1</LI>
@@ -98,68 +98,68 @@ class="STYLE3">我们开学啦</SPAN></H4>
 <DIV class="fr shouye">
 <UL>
   <LI><A href="http://php.itcast.cn/news/20131128/10173894392.shtml"><IMG style="width: 142px; height: 87px;" 
-  alt="传智播客php" src="./Public/images/20131128145416257.jpg"></A></LI>
+  alt="传智播客php" src="/bbs/Public/images/20131128145416257.jpg"></A></LI>
   <LI><A class="style3" href="http://php.itcast.cn/news/20131128/10173894392.shtml">曹伟-玩酷我的程序人生</A></LI>
 </UL>
 <UL>
   <LI><A href="http://php.itcast.cn/news/20140530/12533844406.shtml"><IMG style="width: 142px; height: 87px;" 
-  alt="传智播客php" src="./Public/images/20140530160404923.jpg"></A></LI>
+  alt="传智播客php" src="/bbs/Public/images/20140530160404923.jpg"></A></LI>
   <LI><A class="style3" href="http://php.itcast.cn/news/20140530/12533844406.shtml">王东方-辣妈挑战PHP 
   </A></LI></UL>
 <UL>
   <LI><A href="http://php.itcast.cn/news/20140304/14023889982.shtml"><IMG style="width: 142px; height: 87px;" 
-  alt="传智播客php" src="./Public/images/20140305143355584.jpg"></A></LI>
+  alt="传智播客php" src="/bbs/Public/images/20140305143355584.jpg"></A></LI>
   <LI><A class="style3" href="http://php.itcast.cn/news/20140304/14023889982.shtml">康红红专题-因为爱情</A></LI>
 </UL>
 <UL>
   <LI><A href="http://php.itcast.cn/news/20130924/17493348861.shtml"><IMG style="width: 142px; height: 87px;" 
-  alt="传智播客php" src="./Public/images/20130925173127783.jpg"></A></LI>
+  alt="传智播客php" src="/bbs/Public/images/20130925173127783.jpg"></A></LI>
   <LI><A class="style3" href="http://php.itcast.cn/news/20130924/17493348861.shtml">陈建利专题-我有我原则 
   </A></LI></UL></DIV>
 <DIV></DIV></DIV>
 <DIV class="clear"></DIV>
-<P class="kxsy-font1"><IMG src="./Public/images/kxsy-tu6.jpg"></P><!--  校园消息  -->
+<P class="kxsy-font1"><IMG src="/bbs/Public/images/kxsy-tu6.jpg"></P><!--  校园消息  -->
 <UL class="huodong11">
-  <LI><IMG src="./Public/images/sanjiao-1.jpg"><A 
+  <LI><IMG src="/bbs/Public/images/sanjiao-1.jpg"><A 
   href="http://php.itcast.cn/news/20141203/14264847561.shtml" 
   target="_blank"><SPAN 
   style="color: rgb(255, 0, 0);">通知：2015年传智播客PHP学科学费价格表</SPAN></A></LI>
-  <LI><IMG src="./Public/images/sanjiao-1.jpg"><A 
+  <LI><IMG src="/bbs/Public/images/sanjiao-1.jpg"><A 
   href="http://bbs.itcast.cn/thread-41296-1-1.html" target="_blank"><SPAN style="color: rgb(255, 0, 0);">PHP0701班,毕业8天,入职25人,平均薪资6240元！</SPAN></A></LI>
-  <LI><STRONG><IMG src="./Public/images/sanjiao-1.jpg"></STRONG><A 
+  <LI><STRONG><IMG src="/bbs/Public/images/sanjiao-1.jpg"></STRONG><A 
   href="http://php.itcast.cn/news/20140904/1456540144.shtml" 
   target="_blank">从辍学到PHP技术总监-4个月,月薪15000元！</A></LI>
-  <LI><STRONG><IMG src="./Public/images/sanjiao-1.jpg"></STRONG><A 
+  <LI><STRONG><IMG src="/bbs/Public/images/sanjiao-1.jpg"></STRONG><A 
   href="http://bbs.itcast.cn/thread-29659-1-1.html" 
   target="_blank">PHP0525班,毕业10天,入职23人,平均薪资6435元！</A></LI>
-  <LI><STRONG><IMG src="./Public/images/sanjiao-1.jpg"></STRONG><A 
+  <LI><STRONG><IMG src="/bbs/Public/images/sanjiao-1.jpg"></STRONG><A 
   href="http://php.itcast.cn/subject/phpwzlx/bbs.shtml" target="_blank"><SPAN 
   style="color: rgb(0, 100, 0);">王者来袭--只做中国PHP培训界的领航者！</SPAN></A></LI>
-  <LI><IMG src="./Public/images/sanjiao-1.jpg"><A 
+  <LI><IMG src="/bbs/Public/images/sanjiao-1.jpg"><A 
   href="http://bbs.itcast.cn/thread-29345-1-1.html" 
   target="_blank">PHP0421班,毕业35天,入职48人,平均薪资6094元！</A></LI>
-  <LI><IMG src="./Public/images/sanjiao-1.jpg"><A 
+  <LI><IMG src="/bbs/Public/images/sanjiao-1.jpg"><A 
   href="http://php.itcast.cn/news/20140409/15455356928.shtml" 
   target="_blank">实力教学赢口碑，学员感激赠锦旗！！</A></LI>
-  <LI><STRONG><IMG src="./Public/images/sanjiao-1.jpg"></STRONG><A 
+  <LI><STRONG><IMG src="/bbs/Public/images/sanjiao-1.jpg"></STRONG><A 
   href="http://www.itcast.cn/news/20140707/13460628965.shtml" 
   target="_blank">学PHP更要来传智，看我们学员的"另类"原因</A></LI>
-  <LI><IMG src="./Public/images/sanjiao-1.jpg"><A 
+  <LI><IMG src="/bbs/Public/images/sanjiao-1.jpg"><A 
   href="http://php.itcast.cn/news/20140121/13294061259.shtml" 
   target="_blank">传智播客PHP项目答辩，群雄竞技牛人辈出</A></LI>
-  <LI><IMG src="./Public/images/sanjiao-1.jpg"><A 
+  <LI><IMG src="/bbs/Public/images/sanjiao-1.jpg"><A 
   href="http://bbs.itcast.cn/thread-25330-1-1.html" 
   target="_blank">仲夏“超”激情，Ajax公开课与你相约</A></LI>
-  <LI><IMG src="./Public/images/sanjiao-1.jpg"><A 
+  <LI><IMG src="/bbs/Public/images/sanjiao-1.jpg"><A 
   href="http://php.itcast.cn/news/20140325/09350022324.shtml" 
   target="_blank">中国最火爆的PHP培训，老师只能坐角落！</A></LI>
-  <LI><IMG src="./Public/images/sanjiao-1.jpg"><A 
+  <LI><IMG src="/bbs/Public/images/sanjiao-1.jpg"><A 
   href="http://php.itcast.cn/news/20140408/09530743698.shtml" 
   target="_blank">传智播客中级PHP项目答辩，学员应对自如！</A></LI>
-  <LI><IMG src="./Public/images/sanjiao-1.jpg"><A 
+  <LI><IMG src="/bbs/Public/images/sanjiao-1.jpg"><A 
   href="http://www.itcast.cn/news/20140917/16571295116.shtml" 
   target="_blank">看逗逼如何玩转传智生涯 </A></LI>
-  <LI><IMG src="./Public/images/sanjiao-1.jpg"><A 
+  <LI><IMG src="/bbs/Public/images/sanjiao-1.jpg"><A 
   href="http://php.itcast.cn/subject/phpzty/phpzt/phpzly.html" 
   target="_blank">学PHP编程，不做孬种程序员！</A></LI><!--
 <li><img src="/images/sanjiao-1.jpg" /><a href="http://www.itcast.cn/news/20140917/17033478626.shtml" target="_blank">我为寻找最初的职业理想而来</a></li>
@@ -170,50 +170,50 @@ class="STYLE3">我们开学啦</SPAN></H4>
 --></UL><!--  校园消息  -->
 <DIV class="clear"></DIV>
 <P class="text-r"><A href="http://php.itcast.cn/news/list/48b817de-285d-4981-a85a-ccdb3f42b15b/1.shtml"><IMG 
-src="./Public/images/jiantoumore.gif"></A></P></DIV>
+src="/bbs/Public/images/jiantoumore.gif"></A></P></DIV>
 <DIV><IMG 
-src="./Public/images/leftbottom.gif"></DIV>
+src="/bbs/Public/images/leftbottom.gif"></DIV>
 <DIV class="clear"></DIV>
 <DIV><IMG 
-src="./Public/images/lefttop.gif"></DIV>
+src="/bbs/Public/images/lefttop.gif"></DIV>
 <DIV class="left_content2">
 <H4 class="title1"><SPAN class="STYLE3">校园</SPAN>动态</H4>
 <DL class="ganyan1 huodong1">
   <DT class="fl"><A href="http://php.itcast.cn/news/20131117/14525122556.shtml" 
-  target="_blank"><IMG style="width: 286px; height: 215px;" src="./Public/images/20131117151902186.jpg"><BR>
+  target="_blank"><IMG style="width: 286px; height: 215px;" src="/bbs/Public/images/20131117151902186.jpg"><BR>
   		开拓视野，展现自我，“非你莫属”我们来啦！</A></DT>
   <DD class="huodongfr">
   <H3 class="STYLE7">班级活动</H3>
   <UL class="bjhd">
-    <LI><IMG src="./Public/images/great.jpg"><A 
+    <LI><IMG src="/bbs/Public/images/great.jpg"><A 
     href="http://php.itcast.cn/news/20140328/17081824603.shtml" 
     target="_blank">PHP学院26期就业班开班，我们为何选择传智！</A></LI>
-    <LI><FONT color="red"><IMG src="./Public/images/great.jpg"><A 
+    <LI><FONT color="red"><IMG src="/bbs/Public/images/great.jpg"><A 
     href="http://php.itcast.cn/news/20140103/12110447816.shtml" 
     target="_blank">PHP学院班级联袂金滏山自助烧烤 </A></FONT></LI>
-    <LI><FONT color="red"><IMG src="./Public/images/great.jpg"></FONT><A 
+    <LI><FONT color="red"><IMG src="/bbs/Public/images/great.jpg"></FONT><A 
     href="http://php.itcast.cn/news/20130807/15041093039.shtml" 
     target="_blank"><SPAN 
     style="color: rgb(255, 0, 0);">PHP学院IT专场招聘会成功举办！</SPAN></A></LI>
-    <LI><FONT color="red"><IMG src="./Public/images/great.jpg"><A 
+    <LI><FONT color="red"><IMG src="/bbs/Public/images/great.jpg"><A 
     href="http://php.itcast.cn/news/20131117/14525122556.shtml" 
     target="_blank">PHP学院学员参与录制，“非你莫属”我们来啦！</A></FONT></LI>
-    <LI><FONT color="red"><IMG src="./Public/images/great.jpg"><A 
+    <LI><FONT color="red"><IMG src="/bbs/Public/images/great.jpg"><A 
     href="http://php.itcast.cn/news/20130422/17470617702.shtml" 
     target="_blank">PHP学院2.28班海奥森“HAPPY”徒步之旅</A></FONT></LI>
-    <LI><FONT color="red"><IMG src="./Public/images/great.jpg"><A 
+    <LI><FONT color="red"><IMG src="/bbs/Public/images/great.jpg"><A 
     href="http://php.itcast.cn/news/20130422/10133870070.shtml" 
     target="_blank">PHP学院3.30班学员香山一日游</A></FONT></LI>
-    <LI><FONT color="red"><IMG src="./Public/images/great.jpg"><A 
+    <LI><FONT color="red"><IMG src="/bbs/Public/images/great.jpg"><A 
     href="http://php.itcast.cn/news/20121231/17261928971.shtml" 
     target="_blank">PHP学院12.29元旦晚会—不做孬种程序员</A></FONT></LI></UL></DD></DL>
 <DIV class="clear"></DIV>
-<P class="text-r"><IMG src="./Public/images/jiantoumore.gif"></P></DIV>
+<P class="text-r"><IMG src="/bbs/Public/images/jiantoumore.gif"></P></DIV>
 <DIV class="clear"></DIV>
 <DIV><IMG 
-src="./Public/images/leftbottom.gif"></DIV>
+src="/bbs/Public/images/leftbottom.gif"></DIV>
 <DIV><IMG 
-src="./Public/images/lefttop.gif"></DIV>
+src="/bbs/Public/images/lefttop.gif"></DIV>
 <DIV class="left_content2">
 <H4 class="ganyan"><SPAN class="STYLE3">论坛</SPAN>热贴<SPAN class="fr"><A href="http://bbs.itcast.cn/">+MORE</A></SPAN></H4>
 <DIV class="tie">
@@ -221,53 +221,53 @@ src="./Public/images/lefttop.gif"></DIV>
 </DIV>
 <DIV class="clear"></DIV></DIV>
 <DIV><IMG 
-src="./Public/images/leftbottom.gif"></DIV>
+src="/bbs/Public/images/leftbottom.gif"></DIV>
 <DIV><IMG 
-src="./Public/images/lefttop.gif"></DIV>
+src="/bbs/Public/images/lefttop.gif"></DIV>
 <DIV class="left_content2">
 <H4 class="ganyan"><SPAN class="fl"><SPAN 
 class="STYLE3">PHP培训</SPAN>学员呐喊</SPAN><SPAN class="fr"><A href="http://php.itcast.cn/php/jyjb.shtml">+MORE</A></SPAN></H4>
 <DL class="ganyan1 huodong1">
   <DT class="fl"><A href="http://php.itcast.cn/news/20130705/14332258802.shtml" 
-  target="_blank"><IMG style="width: 287px; height: 189px;" src="./Public/images/20130705170611718.jpg"></A><BR><A 
+  target="_blank"><IMG style="width: 287px; height: 189px;" src="/bbs/Public/images/20130705170611718.jpg"></A><BR><A 
   href="http://php.itcast.cn/news/20130705/14332258802.shtml" 
   target="_blank">传智播客PHP学院就业明星-张巍</A></DT>
   <DD class="huodongfr">
   <H3 class="STYLE7">就业信息</H3>
   <UL class="bjhd">
     <LI><IMG 
-    src="./Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">张＊ 
+    src="/bbs/Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">张＊ 
     2014.10.22 &nbsp;北京树蛙＊＊ &nbsp;6000</A></LI>
     <LI><IMG 
-    src="./Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">粟＊＊ 
+    src="/bbs/Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">粟＊＊ 
     2014.10.21 &nbsp;智恒＊＊ &nbsp;5000</A></LI>
     <LI><IMG 
-    src="./Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">王＊＊ 
+    src="/bbs/Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">王＊＊ 
     2014.10.20&nbsp; 淘伟＊＊公司 &nbsp;&nbsp;6000</A></LI>
     <LI><IMG 
-    src="./Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">李＊ 
+    src="/bbs/Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">李＊ 
     2014.10.17 &nbsp; 北京通达＊＊公司 &nbsp; 6000</A></LI>
     <LI><IMG 
-    src="./Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">张＊＊ 
+    src="/bbs/Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">张＊＊ 
     2014.10.16 &nbsp; 北京通达＊＊公司 &nbsp; 6000</A></LI>
     <LI><IMG 
-    src="./Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">刘＊＊ 
+    src="/bbs/Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">刘＊＊ 
     2014.10.15 &nbsp; 北京通达＊＊公司 &nbsp; &nbsp;5000</A></LI>
     <LI><IMG 
-    src="./Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">曹＊ 
+    src="/bbs/Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">曹＊ 
     2014.10.14 &nbsp;国度＊＊公司 &nbsp;7000</A></LI>
     <LI><IMG 
-    src="./Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">陈＊＊ 
+    src="/bbs/Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml">陈＊＊ 
     2014.10.13 &nbsp;北京弗兰＊＊公司 &nbsp;5500</A></LI>
     <LI><IMG 
-    src="./Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml"><FONT 
+    src="/bbs/Public/images/great(1).jpg"><A href="http://php.itcast.cn/php/jyjb.shtml"><FONT 
     style="color: red;"><B>&gt;&gt;查看更多就业信息</B></FONT></A></LI></UL></DD></DL>
 <DIV class="clear"></DIV></DIV>
 <DIV class="clear"></DIV>
 <DIV><IMG 
-src="./Public/images/leftbottom.gif"></DIV>
+src="/bbs/Public/images/leftbottom.gif"></DIV>
 <DIV><IMG 
-src="./Public/images/lefttop.gif"></DIV>
+src="/bbs/Public/images/lefttop.gif"></DIV>
 <DIV class="left_content2">
 <H4 class="ganyan"><SPAN class="fl"><SPAN class="STYLE3">学员</SPAN>感言</SPAN><SPAN 
 class="fr"><A href="http://php.itcast.cn/news/list/0b8acc29-7202-4e1d-a6db-f6dfd3a639bb/1.shtml">+MORE</A></SPAN></H4>
@@ -275,7 +275,7 @@ class="fr"><A href="http://php.itcast.cn/news/list/0b8acc29-7202-4e1d-a6db-f6dfd
 <DIV class="ganyanleft fl">
 <DL class="ganyan1">
   <DT class="fl"><A href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml"><IMG 
-  style="width: 108px; height: 71px;" alt="" src="./Public/images/xygn03.jpg"></A></DT>
+  style="width: 108px; height: 71px;" alt="" src="/bbs/Public/images/xygn03.jpg"></A></DT>
   <DD class="fr"><SPAN class="STYLE6"><A href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml">[php学员]</A></SPAN><A 
   href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml">钟玲玉：传智，我人生中重要的一站</A></DD>
 </DL>
@@ -292,7 +292,7 @@ class="fr"><A href="http://php.itcast.cn/news/list/0b8acc29-7202-4e1d-a6db-f6dfd
 <DL class="ganyan1">
   <DT class="fl"><A 
   href="http://php.itcast.cn/news/20120913/11580550824.shtml"><IMG style="width: 108px; height: 71px;" 
-  alt="" src="./Public/images/20130812133704044.jpg"></A></DT>
+  alt="" src="/bbs/Public/images/20130812133704044.jpg"></A></DT>
   <DD class="fr"><SPAN class="STYLE6"><A href="http://php.itcast.cn/news/20120913/11580550824.shtml">[php学员]</A></SPAN><A 
   href="http://php.itcast.cn/news/20120913/11580550824.shtml">王艳：美女网编,毕业薪水6500</A></DD>
 </DL>
@@ -306,14 +306,14 @@ class="fr"><A href="http://php.itcast.cn/news/list/0b8acc29-7202-4e1d-a6db-f6dfd
   style="color: red;"><B>&gt;&gt;查看更多学员感言</B></FONT></A></LI></UL></DIV></DIV><BR>
 <DIV class="clear"></DIV></DIV>
 <DIV><IMG 
-src="./Public/images/leftbottom.gif"></DIV>
+src="/bbs/Public/images/leftbottom.gif"></DIV>
 <DIV><IMG 
-src="./Public/images/lefttop.gif"></DIV>
+src="/bbs/Public/images/lefttop.gif"></DIV>
 <DIV class="left_content2">
 <H4 class="ganyan"><SPAN class="fl"><SPAN 
 class="STYLE3">PHP培训</SPAN>名师答疑</SPAN><SPAN class="fr"><A href="http://php.itcast.cn/news/list/cba8c58c-b2d4-4f48-bf64-a10b59fb2666/1.shtml">+MORE</A></SPAN></H4>
 <DIV class="msdy">
-<DIV class="msdy-left"><IMG src="./Public/images/wenhao-1.jpg"></DIV>
+<DIV class="msdy-left"><IMG src="/bbs/Public/images/wenhao-1.jpg"></DIV>
 <DIV class="msdy-right">
 <UL>
   <LI><A href="http://www.itcast.cn/news/20121005/12001594210.shtml"><SPAN 
@@ -328,7 +328,7 @@ class="STYLE3">PHP培训</SPAN>名师答疑</SPAN><SPAN class="fr"><A href="http
 <UL>
   <LI><A 
   href="http://php.itcast.cn/news/20130523/16573389409.shtml">传智播客PHP视频教程手册大全</A><IMG 
-  src="./Public/images/news.jpg" width="24" 
+  src="/bbs/Public/images/news.jpg" width="24" 
   height="5"></LI>
   <LI><A 
   href="http://php.itcast.cn/news/20130703/11524035296.shtml">韩老师回答大一学生如何选择专业问题</A></LI>
@@ -339,7 +339,7 @@ class="STYLE3">PHP培训</SPAN>名师答疑</SPAN><SPAN class="fr"><A href="http
   style="color: red;"><B>&gt;&gt;查看更多答疑信息</B></FONT></A></LI></UL></DIV><BR></DIV>
 <DIV class="clear"></DIV></DIV>
 <DIV><IMG 
-src="./Public/images/leftbottom.gif"></DIV>
+src="/bbs/Public/images/leftbottom.gif"></DIV>
 <DIV></DIV></DIV>
 <DIV id="right" class="fl">
 <H4 style="margin-top: 10px;" class="righttitle1"><SPAN 
@@ -385,10 +385,10 @@ class="fl">PHP培训开班信息</SPAN></H4>
   target="_blank"><SPAN 
   class="time jyjb-font1"><B>爆满已开班</B></SPAN>就业班--第33期(2014年11月21号)</A></LI>
 </UL></DIV>
-<DIV class="rightbottom"><IMG src="./Public/images/rightbottom.jpg"></DIV>
+<DIV class="rightbottom"><IMG src="/bbs/Public/images/rightbottom.jpg"></DIV>
 <H4 class="righttitle1 zhaopin"><SPAN class="blue">最新</SPAN>企业招聘</H4>
 <DIV class="rightkuang1">
-<P class="cent"> <IMG src="./Public/images/select.jpg" 
+<P class="cent"> <IMG src="/bbs/Public/images/select.jpg" 
 width="256" height="66"></P>
 <TABLE style="margin-top: 5px;" class="zhaopinlist" border="0" cellSpacing="0" 
 cellPadding="0" width="98%" height="124">
@@ -465,23 +465,23 @@ cellPadding="0" width="98%" height="124">
       target="_blank"><SPAN style="color: rgb(255, 0, 0);">更多</SPAN></A></TD></TR>
   <TR></TR></TBODY></TABLE>
 <DIV class="clear"></DIV></DIV>
-<DIV class="rightbottom"><IMG src="./Public/images/bottom1.gif"></DIV>
+<DIV class="rightbottom"><IMG src="/bbs/Public/images/bottom1.gif"></DIV>
 <H4 style="margin-top: 3px;" class="righttitle1 zhaopin"><SPAN 
 class="blue">常见</SPAN>问题</H4>
 <DIV style="padding-top: 18px;" class="rightkuang1">
 <UL class="zhaopinlist wenti">
   <UL class="zhaopinlist wenti">
     <LI><A href="http://php.itcast.cn/news/20130723/11245447222.shtml" target="_blank">贵校php教学与**学校相比有哪些特色</A><IMG 
-    src="./Public/images/new.gif" width="29" 
+    src="/bbs/Public/images/new.gif" width="29" 
     height="15"></LI>
     <LI><A href="http://php.itcast.cn/news/6c691c56/0dae/41ff/996a/2d110a612490.shtml" 
-    target="_blank">你们的PHP培训为什么那么便宜？</A><IMG src="./Public/images/new.gif" 
+    target="_blank">你们的PHP培训为什么那么便宜？</A><IMG src="/bbs/Public/images/new.gif" 
     width="29" height="15"></LI>
     <LI><A href="http://php.itcast.cn/news/28bc21c1/10ef/4bcb/ad34/c0b70fc9ab8a.shtml" 
-    target="_blank">你们入学需要什么样的基础</A><IMG src="./Public/images/new.gif" 
+    target="_blank">你们入学需要什么样的基础</A><IMG src="/bbs/Public/images/new.gif" 
     width="29" height="15"></LI>
     <LI><A href="http://php.itcast.cn/news/13099012/ae09/4d3b/ad0e/b945b114ae9c.shtml" 
-    target="_blank">你们的师资力量是什么样子的？</A> <IMG src="./Public/images/new.gif" 
+    target="_blank">你们的师资力量是什么样子的？</A> <IMG src="/bbs/Public/images/new.gif" 
     width="29" height="15"></LI>
     <LI><A href="http://php.itcast.cn/news/5b2001e2/b84e/4b60/b9a2/fb3ca2def9f7.shtml" 
     target="_blank">你们的课程内容质量是怎么样的？</A></LI>
@@ -505,58 +505,58 @@ class="blue">常见</SPAN>问题</H4>
 <li><a href="http://php.itcast.cn/news/20130409/15001772469.shtml" target="_blank">学php需要具备哪些条件？</a></li>--></UL></UL>
 <DIV class="clear"></DIV>
 <P class="text-r"><A href="http://php.itcast.cn/php/question.shtml"><IMG border="0" 
-src="./Public/images/jiantoumore.gif"></A></P></DIV>
-<DIV class="rightbottom"><IMG src="./Public/images/bottom1.gif"></DIV>
+src="/bbs/Public/images/jiantoumore.gif"></A></P></DIV>
+<DIV class="rightbottom"><IMG src="/bbs/Public/images/bottom1.gif"></DIV>
 <H4 class="righttitle1 lianxi"><SPAN class="fl"><SPAN 
 class="blue">课程</SPAN>咨询</SPAN></H4>
 <DIV class="rightkuang">
 <DL>
   <DT style="padding-bottom: 20px;">		北京传智播客</DT>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="北京传智播客QQ在线咨询" src="./Public/images/qqmfst.jpg" 
+  target="_blank"><IMG border="0" alt="北京传智播客QQ在线咨询" src="/bbs/Public/images/qqmfst.jpg" 
   width="99" height="27"></A></DD>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="北京传智播客QQ在线咨询" src="./Public/images/qqkczx.jpg" 
+  target="_blank"><IMG border="0" alt="北京传智播客QQ在线咨询" src="/bbs/Public/images/qqkczx.jpg" 
   width="99" height="27"></A></DD></DL>
 <DL class="qqtwo">
   <DT style="padding-bottom: 20px;">		广州传智播客</DT>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" 
-  target="_blank"><IMG border="0" alt="广州传智播客QQ在线咨询" src="./Public/images/qqmfst.jpg" 
+  target="_blank"><IMG border="0" alt="广州传智播客QQ在线咨询" src="/bbs/Public/images/qqmfst.jpg" 
   width="99" height="27"></A></DD>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" 
-  target="_blank"><IMG border="0" alt="广州传智播客QQ在线咨询" src="./Public/images/qqkczx.jpg" 
+  target="_blank"><IMG border="0" alt="广州传智播客QQ在线咨询" src="/bbs/Public/images/qqkczx.jpg" 
   width="99" height="27"></A></DD></DL>
 <DL class="qqthree">
   <DT style="padding-bottom: 20px;">		上海传智播客</DT>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/djUD" 
-  target="_blank"><IMG border="0" alt="上海传智播客QQ在线咨询" src="./Public/images/qqmfst.jpg" 
+  target="_blank"><IMG border="0" alt="上海传智播客QQ在线咨询" src="/bbs/Public/images/qqmfst.jpg" 
   width="99" height="27"></A></DD>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/djUD" 
-  target="_blank"><IMG border="0" alt="上海传智播客QQ在线咨询" src="./Public/images/qqkczx.jpg" 
+  target="_blank"><IMG border="0" alt="上海传智播客QQ在线咨询" src="/bbs/Public/images/qqkczx.jpg" 
   width="99" height="27"></A></DD></DL>
 <DL class="qqfour">
   <DT style="padding-bottom: 20px;">		武汉传智播客</DT>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/P4EE" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="./Public/images/qqmfst.jpg" 
+  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/bbs/Public/images/qqmfst.jpg" 
   width="99" height="27"></A></DD>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/P4EE" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="./Public/images/qqkczx.jpg" 
+  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/bbs/Public/images/qqkczx.jpg" 
   width="99" height="27"></A></DD></DL>
 <DL class="qqfive">
   <DT style="padding-bottom: 20px;">		郑州传智播客</DT>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/0LVE" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="./Public/images/qqmfst.jpg" 
+  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/bbs/Public/images/qqmfst.jpg" 
   width="99" height="27"></A></DD>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/0LVE" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="./Public/images/qqkczx.jpg" 
+  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/bbs/Public/images/qqkczx.jpg" 
   width="99" height="27"></A></DD></DL>
 <DL class="qqsix">
   <DT style="padding-bottom: 20px;">		西安传智播客</DT>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="西安传智播客QQ在线咨询" src="./Public/images/qqmfst.jpg" 
+  target="_blank"><IMG border="0" alt="西安传智播客QQ在线咨询" src="/bbs/Public/images/qqmfst.jpg" 
   width="99" height="27"></A></DD>
   <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="西安传智播客QQ在线咨询" src="./Public/images/qqkczx.jpg" 
+  target="_blank"><IMG border="0" alt="西安传智播客QQ在线咨询" src="/bbs/Public/images/qqkczx.jpg" 
   width="99" height="27"></A></DD></DL><!--<dl class="qqsev">
 	<dt style="padding-bottom:20px;">
 		西安传智播客</dt>
@@ -566,12 +566,12 @@ class="blue">课程</SPAN>咨询</SPAN></H4>
 		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
 </dl>-->
 <DIV class="clear"></DIV></DIV>
-<DIV class="rightbottom"><IMG src="./Public/images/rightbottom.jpg"></DIV></DIV></DIV>
+<DIV class="rightbottom"><IMG src="/bbs/Public/images/rightbottom.jpg"></DIV></DIV></DIV>
 <DIV class="clear"></DIV><!-- 友情链接 -->
 <DIV class="content">
 <DIV class="friendlink_con">
 <DIV class="friendlink">
-<DIV class="friendlink_style01"><IMG src="./Public/images/youqin.jpg" 
+<DIV class="friendlink_style01"><IMG src="/bbs/Public/images/youqin.jpg" 
 width="37" height="87"></DIV>
 <DIV class="friendlink_style03">
 <UL>
@@ -614,9 +614,9 @@ width="37" height="87"></DIV>
     <p>电话：010-82935150/60/70 传真：010-82935100 邮箱: zhanghj+itcast.cn</p>
     <p><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备08001421号</a><a href="http://www.bjgaj.gov.cn/web/" target="_blank">京公网安备110108007702</a></p>
 	<p style="padding-top:10px"><a style="overflow:hidden; margin-right:6px; padding:0;" href="http://webscan.360.cn/index/checkwebsite/url/www.itcast.cn" target="_blank">
-	<img width="124" height="47" src="./Public/images/360anquan.png"></a><a style="overflow:hidden; margin-right:6px; padding:0;" href="http://t.knet.cn/index_new.jsp" target="_blank">
-	<img width="124" height="47" src="./Public/images/cx.png"></a><a target="_blank" href="http://www.bj.cyberpolice.cn/index.do" style="padding:0;">
-	<img width="124" height="47" src="./public/images/jc.png"></a></p>
+	<img width="124" height="47" src="/bbs/Public/images/360anquan.png"></a><a style="overflow:hidden; margin-right:6px; padding:0;" href="http://t.knet.cn/index_new.jsp" target="_blank">
+	<img width="124" height="47" src="/bbs/Public/images/cx.png"></a><a target="_blank" href="http://www.bj.cyberpolice.cn/index.do" style="padding:0;">
+	<img width="124" height="47" src="/bbs/Public/images/jc.png"></a></p>
   </div>
 </div>
 <!-- 页面底部 -->
@@ -630,18 +630,18 @@ width="37" height="87"></DIV>
         DD_belatedPNG.fix('titZx');
     </script>
 <![endif]-->
-<LINK rel=stylesheet type=text/css href="./Public/css/common.css">
+<LINK rel=stylesheet type=text/css href="/bbs/Public/css/common.css">
 <!--[if lte IE 6]>
-<link type="text/css" rel="stylesheet" href="./public/index/css/ie.css" mce_href="./public/index/css/ie.css" />
+<link type="text/css" rel="stylesheet" href="/bbs/Public/index/css/ie.css" mce_href="/bbs/Public/index/css/ie.css" />
 <![endif]-->
-<SCRIPT type=text/javascript src="./Public/js/jquery.js"></SCRIPT>
-<SCRIPT type=text/javascript src="./Public/js./public/index.js"></SCRIPT>
+<SCRIPT type=text/javascript src="/bbs/Public/js/jquery.js"></SCRIPT>
+<SCRIPT type=text/javascript src="/bbs/Public/js/bbs/Public/index.js"></SCRIPT>
 <SCRIPT type=text/javascript>kfguin="800068868";ws="www.itcast.cn"; companyname=""; welcomeword=""; type="1";</SCRIPT>
-<SCRIPT src="./Public/js/kf.js" type=text/javascript></SCRIPT>
-<link href="./Public/css/init.css" mce_href="./Public/css/init.css" rel="stylesheet" type="text/css" />
-<link href="./Public/css/kefu.css" mce_href="./Public/css/kefu.css" rel="stylesheet" type="text/css" />
+<SCRIPT src="/bbs/Public/js/kf.js" type=text/javascript></SCRIPT>
+<link href="/bbs/Public/css/init.css" mce_href="/bbs/Public/css/init.css" rel="stylesheet" type="text/css" />
+<link href="/bbs/Public/css/kefu.css" mce_href="/bbs/Public/css/kefu.css" rel="stylesheet" type="text/css" />
 <!--[if lte IE 6]>
-<link type="text/css" rel="stylesheet" href="./public/index/ie.css" mce_href="./public/index/ie.css" />
+<link type="text/css" rel="stylesheet" href="/bbs/Public/index/ie.css" mce_href="/bbs/Public/index/ie.css" />
 <![endif]-->
 <div class="fixed">
 	<div class="f_left"></div>
@@ -655,13 +655,13 @@ width="37" height="87"></DIV>
 				</li>
 				<li class="fr_c2_li3" style="padding:6px 0 0 12px; height:30px; width:90px; border-bottom:none;">
 					<!-- WPA Button Begin -->
-					<a href="http://cnrdn.com/iP66" target="_blank"><img src="./Public/images/wpa_preview_a02.png"/></a>
+					<a href="http://cnrdn.com/iP66" target="_blank"><img src="/bbs/Public/images/wpa_preview_a02.png"/></a>
 					<!-- WPA Button End -->
 				</li>
 			</ul>
 		</div>
 		<div class="fr_c3">
-			<a href="http://cnrdn.com/iP66" target="_blank"><img src="./Public/images/right_float_web.png" width="122" height="50" /></a>
+			<a href="http://cnrdn.com/iP66" target="_blank"><img src="/bbs/Public/images/right_float_web.png" width="122" height="50" /></a>
 		</div>
 		<div class="fr_c4">
 			<ul>
@@ -671,8 +671,8 @@ width="37" height="87"></DIV>
 		</div>
 		<div class="fr_c6">
 			<ul>
-				<li><a style="display: block; text-indent: 22px; margin: 0px auto; width: 84px; background: url(&quot;./Public/images/navicon.gif&quot;) no-repeat scroll 0px -20px transparent;" href="http://www.itcast.cn/forms/index.shtml" target="_blank">预约报名<div></div></a></li>
-				<li style="border-bottom:none;"><a style="display: block; text-indent: 22px; margin: 0px auto; width: 84px; background: url(&quot;./Public/images/navicon.gif&quot;) no-repeat scroll 0px -78px transparent;" href="http://bbs.itcast.cn/" target="_blank">技术交流<div></div></a></li>
+				<li><a style="display: block; text-indent: 22px; margin: 0px auto; width: 84px; background: url(&quot;/bbs/Public/images/navicon.gif&quot;) no-repeat scroll 0px -20px transparent;" href="http://www.itcast.cn/forms/index.shtml" target="_blank">预约报名<div></div></a></li>
+				<li style="border-bottom:none;"><a style="display: block; text-indent: 22px; margin: 0px auto; width: 84px; background: url(&quot;/bbs/Public/images/navicon.gif&quot;) no-repeat scroll 0px -78px transparent;" href="http://bbs.itcast.cn/" target="_blank">技术交流<div></div></a></li>
 			</ul>
 		</div>
 		<div class="fr_c7"></div>
@@ -695,8 +695,8 @@ width="37" height="87"></DIV>
 	});
 </script>
 
-<script type="text/javascript" src="./Public/js/webim.js"></script>
-<script type="text/javascript" src="./Public/js/baidushare.js"></script>
+<script type="text/javascript" src="/bbs/Public/js/webim.js"></script>
+<script type="text/javascript" src="/bbs/Public/js/baidushare.js"></script>
 <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F616f7dbc9d62017d85a273460d618961' type='text/javascript'%3E%3C/script%3E"));
