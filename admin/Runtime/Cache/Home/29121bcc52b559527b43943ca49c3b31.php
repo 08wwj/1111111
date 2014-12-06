@@ -25,7 +25,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td>内容</td>
+				<td>介绍</td>
 				<td>
 					<textarea id="editor_id" name="content" style="width:700px;height:300px;"></textarea>
 				</td>
@@ -34,7 +34,7 @@
 			</tr>
 			<tr>
 				<td colspan="2">
-					<input type="submit" value="发表" class="input_button"/>
+					<input type="submit" value="添加" class="input_button"/>
 					<input type="reset" class="input_button"/>
 				</td>
 			</tr>
