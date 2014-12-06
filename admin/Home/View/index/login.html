@@ -9,16 +9,16 @@
 </head>
 <body>
 	<div id="divBox">
-		<form action="{:U('Home/index/loginpro')}" method="POST" id="login">
-			<input type="text" id="userName" name="userName"/>
-			<input type="password" id="psd" name="psd"/>
-			<input type="" value="" id="verify" name="verify"/>
-                        <p class="top15 captcha" id="captcha-container">       
-                    <img width="30%" class="left15" height="40" margin-left='500' alt="验证码" src="{:U('Home/Index/verify_c',array())}" title="点击刷新">
-                  </p>
+		<form action="{:U('Home/index/admin_login_pro')}" method="POST" id="loginForm">
+			<input type="text" id="username" name="admin_name"/>
+			<input type="password" id="psd" name="admin_pwd"/>
+			<input type="" value="" id="verify" name="yzm"/>
+                        
 			<input type="submit" id="sub" value=""/>
 			<!-- 验证码 -->
-			<img src="" id="verify_img" />
+                        <div id='yzma'>
+			<img src='__URL__/yzm' onclick="gai()"  width="80"  height='25' id='yzm'/> 
+                        </div>
 		</form>
 		<div class="four_bj">
 			<p class="f_lt"></p>
@@ -47,17 +47,37 @@
    <script src="/bbs/admin/Public/js/jq.js"></script>
    <script type="text/javascript">
     <!--
-    // 验证码生成  
-    var captcha_img = $('#captcha-container').find('img')  
-    var verifyimg = captcha_img.attr("src");  
-    captcha_img.attr('title', '点击刷新');  
-    captcha_img.click(function(){  
-        if( verifyimg.indexOf('?')>0){  
-            $(this).attr("src", verifyimg+'&random='+Math.random());  
-        }else{  
-            $(this).attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());  
-        }  
-    });  
+      function gai(){
+                        //alert(111)
+                        var yzma=document.getElementById("yzm");
+
+                                //jq("#yzm").attr("src","/index.php/index/verify_image");
+                        yzma.src="__URL__/yzm";
+        }
+        $('#loginForm').submit(function(){
+        if($('#username').val()==''){
+            alert('请输入用户名！');
+            return false;
+        }
+        if($('#psd').val()==''){
+            alert('请输入密码！');
+            return false;
+        }
+        if($('#verify').val()==''){
+            alert('请输入验证码！');
+            return false;
+        }
+    });
+     window.onload=function(){(window.onresize=function(){
+            //获取可见高度
+            var _h=document.documentElement.clientHeight,
+            _n_h=$('#login-panel').height();
+            var _login_top=(_h-_n_h-100)/2;
+            $('#login-panel').animate({'margin-top':_login_top+'px'},'slow');
+        })()};
+        $('#admin_name').focus();
+
     //-->
     </script>
 </html>
+ 

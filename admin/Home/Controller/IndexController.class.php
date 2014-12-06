@@ -24,6 +24,48 @@ class IndexController extends Controller
            //$Verify->expire = 600;  
            $Verify->entry();  
        }
+        public function yzm(){
+        $config =    array(    
+             'fontSize'    =>    130,    // 验证码字体大小   
+             'length'      =>    4,     // 验证码位数   
+             'useNoise'    =>    true, // 关闭验证码杂点
+         );
+        $Verify = new \Think\Verify($config);
+        $Verify->entry();
+        }
+        //处理登陆
+        public function admin_login_pro(){
+            //print_r($_POST);
+            $code=$_POST['yzm'];
+            $name=$_POST['admin_name'];
+            $pwd=$_POST['admin_pwd'];
+            //echo $pwd;die;
+            $verify = new \Think\Verify();   
+            if(empty($verify->check($code, $id=''))){
+                echo "<script>alert('验证码错误')</script>";
+                      $this->display('login');
+            }else{
+                $admin_user = M('user');
+                $data = $admin_user->where("u_name='".$name."'")->find();
+                //echo $admin_user->getLastSql();
+                if($data){
+                      if($data['u_password']==md5($pwd)){
+                        //  $this->redirect();
+                        session('name',$name); 
+                       $this->display('index');
+
+                      }else{
+                        echo "<script>alert('密码错误')</script>";
+                      $this->display('login'); 
+                      }
+                      }
+                      else{
+                      echo "<script>alert('用户名不存在')</script>";
+                      $this->display('login');
+                      } 
+            }
+        }
+
 	//将栏目添加到数据库
 	public function add_category_pro(){
 	$name=$_POST['name'];
@@ -33,7 +75,7 @@ class IndexController extends Controller
 	$data['c_title'] = $name;
 	$data['c_content'] = $content;
 	$aa=$category->add($data);
-       
+      
 	}
 	//插叙栏目数据
 	public function category_list(){
@@ -69,5 +111,14 @@ class IndexController extends Controller
             //print_r($array);
             $this->assign('array',$array); 
             $this->display('check_article');
+        }
+        //添加导航
+        public function add_nav(){
+            $nav=M('nav');
+            $title=$_POST['title'];
+            $url=$_POST['url'];
+            $isset=$_POST['isset'];
+            $content=$_POST['content'];
+            echo $isset;
         }
 }

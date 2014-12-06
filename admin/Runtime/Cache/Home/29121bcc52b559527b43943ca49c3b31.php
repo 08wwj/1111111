@@ -6,7 +6,7 @@
 	<title></title>
 </head>
 <body>
-	<form action="<?php echo U('Home/index/add_article_show');?>" method="post">
+	<form action="<?php echo U('Home/index/add_nav');?>" method="post">
 		<table class="table">
 			<tr>
 				<td class="th" colspan="2">添加导航栏</td>
@@ -20,8 +20,15 @@
 			<tr>
 				<td>链接</td>
 				<td>
-					<input type="text" name="title" class="title"/>
+					<input type="text" name="url" class="title"/>
 
+				</td>
+			</tr>
+                    <tr>
+				<td>是否显示</td>
+				<td>
+					<input type="radio" name="" value="1" checked="checked"/>显示
+					<input type="radio" name="" value="0" />关闭
 				</td>
 			</tr>
 			<tr>

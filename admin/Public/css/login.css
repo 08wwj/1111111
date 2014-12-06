@@ -158,3 +158,10 @@ ul li.success{
 	border-radius: 4px;
 	background: url("../images/action_check.png") no-repeat 5px;
 }
+#yzma{
+	width: 140px;
+	height: 100px;
+	top: 155px;
+	left: 145px;
+	position: absolute;
+}
