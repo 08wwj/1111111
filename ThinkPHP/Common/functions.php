@@ -1455,3 +1455,8 @@ function filter_exp(&$value){
 function in_array_case($value,$array){
     return in_array(strtolower($value),array_map('strtolower',$array));
 }
+//检查验证吗
+   function check_verify($code, $id = ""){  
+	$verify = new \Think\Verify();  
+	return $verify->check($code, $id);  
+}  

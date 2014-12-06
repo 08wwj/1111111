@@ -358,3 +358,1223 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 ERR: 非法操作:bbs
 
+[ 2014-12-06T09:31:02+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T09:44:55+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] simplexml_load_string(): Entity: line 15: parser error : Opening and ending tag mismatch: IMG line 14 and DIV E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():  href=&quot;http://icd.itcast.cn/&quot; target=&quot;_blank&quot;&gt;网页平面设计学院&lt;/A&gt;&lt;/DIV&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 15: parser error : Opening and ending tag mismatch: IMG line 13 and DIV E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): =&quot;http://icd.itcast.cn/&quot; target=&quot;_blank&quot;&gt;网页平面设计学院&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 18: parser error : Opening and ending tag mismatch: IMG line 17 and DIV E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): src=&quot;./bbs/Public/images/lefttop.gif&quot;&gt;&lt;/DIV&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                             ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 28: parser error : Opening and ending tag mismatch: IMG line 27 and A E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   src=&quot;./bbs/Public/images/20140507122631634.jpg&quot;&gt;&lt;/A&gt;&lt;/LI&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                       ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 28: parser error : Opening and ending tag mismatch: A line 26 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   src=&quot;./bbs/Public/images/20140507122631634.jpg&quot;&gt;&lt;/A&gt;&lt;/LI&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                            ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 31: parser error : Opening and ending tag mismatch: IMG line 30 and A E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   src=&quot;./bbs/Public/images/20140902180947196.jpg&quot;&gt;&lt;/A&gt;&lt;/LI&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                       ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 31: parser error : Opening and ending tag mismatch: A line 29 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   src=&quot;./bbs/Public/images/20140902180947196.jpg&quot;&gt;&lt;/A&gt;&lt;/LI&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                            ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 34: parser error : Opening and ending tag mismatch: IMG line 33 and A E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   src=&quot;./bbs/Public/images/20140528133631480.jpg&quot;&gt;&lt;/A&gt;&lt;/LI&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                       ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 34: parser error : Opening and ending tag mismatch: A line 32 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   src=&quot;./bbs/Public/images/20140528133631480.jpg&quot;&gt;&lt;/A&gt;&lt;/LI&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                            ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 35: parser error : Opening and ending tag mismatch: LI line 32 and UL E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;/UL&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():      ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 39: parser error : Opening and ending tag mismatch: LI line 29 and DIV E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   &lt;LI&gt;3&lt;/LI&gt;&lt;/UL&gt;&lt;/DIV&gt;&lt;/DIV&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                        ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 39: parser error : Opening and ending tag mismatch: LI line 26 and DIV E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   &lt;LI&gt;3&lt;/LI&gt;&lt;/UL&gt;&lt;/DIV&gt;&lt;/DIV&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 43: parser error : Opening and ending tag mismatch: IMG line 42 and A E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   alt=&quot;传智播客php&quot; src=&quot;./bbs/Public/images/20131128145416257.jpg&quot;&gt;&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                             ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 43: parser error : Opening and ending tag mismatch: A line 42 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   alt=&quot;传智播客php&quot; src=&quot;./bbs/Public/images/20131128145416257.jpg&quot;&gt;&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 45: parser error : Opening and ending tag mismatch: LI line 42 and UL E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;/UL&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():      ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 48: parser error : Opening and ending tag mismatch: IMG line 47 and A E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   alt=&quot;传智播客php&quot; src=&quot;./bbs/Public/images/20140530160404923.jpg&quot;&gt;&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                             ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 48: parser error : Opening and ending tag mismatch: A line 47 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   alt=&quot;传智播客php&quot; src=&quot;./bbs/Public/images/20140530160404923.jpg&quot;&gt;&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 50: parser error : Opening and ending tag mismatch: LI line 47 and UL E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   &lt;/A&gt;&lt;/LI&gt;&lt;/UL&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                 ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 53: parser error : Opening and ending tag mismatch: IMG line 52 and A E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   alt=&quot;传智播客php&quot; src=&quot;./bbs/Public/images/20140305143355584.jpg&quot;&gt;&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                             ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 53: parser error : Opening and ending tag mismatch: A line 52 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   alt=&quot;传智播客php&quot; src=&quot;./bbs/Public/images/20140305143355584.jpg&quot;&gt;&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 55: parser error : Opening and ending tag mismatch: LI line 52 and UL E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;/UL&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():      ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 58: parser error : Opening and ending tag mismatch: IMG line 57 and A E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   alt=&quot;传智播客php&quot; src=&quot;./bbs/Public/images/20130925173127783.jpg&quot;&gt;&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                             ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 58: parser error : Opening and ending tag mismatch: A line 57 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   alt=&quot;传智播客php&quot; src=&quot;./bbs/Public/images/20130925173127783.jpg&quot;&gt;&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 60: parser error : Opening and ending tag mismatch: LI line 57 and UL E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   &lt;/A&gt;&lt;/LI&gt;&lt;/UL&gt;&lt;/DIV&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                 ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 60: parser error : Opening and ending tag mismatch: UL line 56 and DIV E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   &lt;/A&gt;&lt;/LI&gt;&lt;/UL&gt;&lt;/DIV&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                       ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 61: parser error : Opening and ending tag mismatch: UL line 51 and DIV E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                  ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 63: parser error : Opening and ending tag mismatch: IMG line 63 and P E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():  E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                       ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 68: parser error : Opening and ending tag mismatch: IMG line 65 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): 255, 0, 0);&quot;&gt;通知：2015年传智播客PHP学科学费价格表&lt;/SPAN&gt;&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 70: parser error : Opening and ending tag mismatch: IMG line 69 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():  0, 0);&quot;&gt;PHP0701班,毕业8天,入职25人,平均薪资6240元！&lt;/SPAN&gt;&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 71: parser error : Opening and ending tag mismatch: IMG line 71 and STRONG E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   &lt;LI&gt;&lt;STRONG&gt;&lt;IMG src=&quot;./bbs/Public/images/sanjiao-1.jpg&quot;&gt;&lt;/STRONG&gt;&lt;A  E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                     ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 73: parser error : Opening and ending tag mismatch: STRONG line 71 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   target=&quot;_blank&quot;&gt;从辍学到PHP技术总监-4个月,月薪15000元！&lt;/A&gt;&lt;/LI&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 74: parser error : Opening and ending tag mismatch: IMG line 74 and STRONG E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   &lt;LI&gt;&lt;STRONG&gt;&lt;IMG src=&quot;./bbs/Public/images/sanjiao-1.jpg&quot;&gt;&lt;/STRONG&gt;&lt;A  E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                     ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 76: parser error : Opening and ending tag mismatch: STRONG line 74 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): arget=&quot;_blank&quot;&gt;PHP0525班,毕业10天,入职23人,平均薪资6435元！&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 77: parser error : Opening and ending tag mismatch: IMG line 77 and STRONG E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   &lt;LI&gt;&lt;STRONG&gt;&lt;IMG src=&quot;./bbs/Public/images/sanjiao-1.jpg&quot;&gt;&lt;/STRONG&gt;&lt;A  E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                     ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 79: parser error : Opening and ending tag mismatch: STRONG line 77 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): , 100, 0);&quot;&gt;王者来袭--只做中国PHP培训界的领航者！&lt;/SPAN&gt;&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 82: parser error : Opening and ending tag mismatch: IMG line 80 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): arget=&quot;_blank&quot;&gt;PHP0421班,毕业35天,入职48人,平均薪资6094元！&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 85: parser error : Opening and ending tag mismatch: IMG line 83 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   target=&quot;_blank&quot;&gt;实力教学赢口碑，学员感激赠锦旗！！&lt;/A&gt;&lt;/LI&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                               ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 86: parser error : Opening and ending tag mismatch: IMG line 86 and STRONG E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   &lt;LI&gt;&lt;STRONG&gt;&lt;IMG src=&quot;./bbs/Public/images/sanjiao-1.jpg&quot;&gt;&lt;/STRONG&gt;&lt;A  E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                     ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 88: parser error : Opening and ending tag mismatch: STRONG line 86 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): target=&quot;_blank&quot;&gt;学PHP更要来传智，看我们学员的&quot;另类&quot;原因&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 91: parser error : Opening and ending tag mismatch: IMG line 89 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   target=&quot;_blank&quot;&gt;传智播客PHP项目答辩，群雄竞技牛人辈出&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 94: parser error : Opening and ending tag mismatch: IMG line 92 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   target=&quot;_blank&quot;&gt;仲夏“超”激情，Ajax公开课与你相约&lt;/A&gt;&lt;/LI&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                             ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 97: parser error : Opening and ending tag mismatch: IMG line 95 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   target=&quot;_blank&quot;&gt;中国最火爆的PHP培训，老师只能坐角落！&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 100: parser error : Opening and ending tag mismatch: IMG line 98 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): arget=&quot;_blank&quot;&gt;传智播客中级PHP项目答辩，学员应对自如！&lt;/A&gt;&lt;/LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                                ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 103: parser error : Opening and ending tag mismatch: IMG line 101 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   target=&quot;_blank&quot;&gt;看逗逼如何玩转传智生涯 &lt;/A&gt;&lt;/LI&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 106: parser error : Opening and ending tag mismatch: IMG line 104 and LI E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():   target=&quot;_blank&quot;&gt;学PHP编程，不做孬种程序员！&lt;/A&gt;&lt;/LI&gt;&lt;!-- E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                                                   ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Comment not terminated E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 104 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 101 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 98 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 95 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 92 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 89 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 86 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 83 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 80 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 77 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 74 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 71 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 69 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag LI line 65 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag UL line 64 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag P line 63 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag UL line 46 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag UL line 41 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag DIV line 40 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag UL line 25 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag DIV line 24 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag DIV line 23 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag DIV line 22 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag DIV line 19 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag DIV line 17 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag DIV line 16 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag IMG line 12 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag IMG line 11 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag IMG line 9 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag DIV line 8 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag DIV line 3 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag DIV line 2 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag tag line 1 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 107: parser error : Premature end of data in tag tpl line 1 E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string(): &lt;li&gt;&lt;img src=&quot;/images/sanjiao-1.jpg&quot; /&gt;&lt;/tpl&gt; E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+NOTIC: [2] simplexml_load_string():                                              ^ E:\learn\one\bbs\ThinkPHP\Library\Think\Template.class.php 第 271 行.
+ERR: XML标签语法错误
+
+[ 2014-12-06T09:45:09+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T09:45:56+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T09:46:58+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T09:47:10+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2014-12-06T09:47:11+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-06T09:48:21+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2014-12-06T09:48:22+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T09:48:32+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-06T09:49:11+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T09:49:57+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T09:50:24+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T09:50:42+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T09:52:51+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T09:54:57+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T09:59:11+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2014-12-06T09:59:19+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2014-12-06T09:59:20+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:00:59+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:01:52+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:03:39+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:04:11+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:04:12+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-06T10:07:19+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:10:48+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:17:07+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-06T10:17:51+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:23:26+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:25:58+08:00 ] 127.0.0.1 /bbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-06T10:26:06+08:00 ] 127.0.0.1 /bbs/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/imageswitch.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/nav_main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/public/js/imageschange.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js/jquery-1.9.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/webim.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A2PHP%E5%AD%A6%E9%99%A2%E5%AE%98%E7%BD%91-%E5%8C%97%E4%BA%ACPHP%E5%9F%B9%E8%AE%AD_PHP%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E5%9F%B9%E8%AE%AD_PHP%E7%A8%8B%E5%BA%8F%E5%91%98%E5%9F%B9%E8%AE%AD%E5%AD%A6%E6%A0%A1_files/api.htm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:传智播客PHP学院官网-北京PHP培训_PHP网站开发培训_PHP程序员培训学校_files
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/init.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/kefu.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js./public/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js/kf.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js/webim.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:16+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js/baidushare.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/public/js/imageschange.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/webim.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/imageswitch.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js/jquery-1.9.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/nav_main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A2PHP%E5%AD%A6%E9%99%A2%E5%AE%98%E7%BD%91-%E5%8C%97%E4%BA%ACPHP%E5%9F%B9%E8%AE%AD_PHP%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E5%9F%B9%E8%AE%AD_PHP%E7%A8%8B%E5%BA%8F%E5%91%98%E5%9F%B9%E8%AE%AD%E5%AD%A6%E6%A0%A1_files/api.htm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:传智播客PHP学院官网-北京PHP培训_PHP网站开发培训_PHP程序员培训学校_files
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/init.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/css/kefu.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js./public/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js/kf.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js/webim.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:21+08:00 ] 127.0.0.1 /bbs/index.php/home/index/Public/js/baidushare.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Public
+
+[ 2014-12-06T10:26:24+08:00 ] 127.0.0.1 /bbs/index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:26:26+08:00 ] 127.0.0.1 /bbs/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-06T10:26:31+08:00 ] 127.0.0.1 /bbs/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

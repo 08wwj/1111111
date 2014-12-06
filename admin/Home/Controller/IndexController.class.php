@@ -9,6 +9,21 @@ class IndexController extends Controller
 	public function index(){
 	$this->display();
 	}
+        /** 
+        *  
+        * 验证码生成 
+        */  
+       public function verify_c(){  
+           $Verify = new \Think\Verify();  
+           $Verify->fontSize = 18;  
+           $Verify->length   = 4;  
+           $Verify->useNoise = false;  
+           $Verify->codeSet = '0123456789';  
+           $Verify->imageW = 130;  
+           $Verify->imageH = 50;  
+           //$Verify->expire = 600;  
+           $Verify->entry();  
+       }
 	//将栏目添加到数据库
 	public function add_category_pro(){
 	$name=$_POST['name'];

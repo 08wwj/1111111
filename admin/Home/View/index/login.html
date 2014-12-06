@@ -13,6 +13,9 @@
 			<input type="text" id="userName" name="userName"/>
 			<input type="password" id="psd" name="psd"/>
 			<input type="" value="" id="verify" name="verify"/>
+                        <p class="top15 captcha" id="captcha-container">       
+                    <img width="30%" class="left15" height="40" margin-left='500' alt="验证码" src="{:U('Home/Index/verify_c',array())}" title="点击刷新">
+                  </p>
 			<input type="submit" id="sub" value=""/>
 			<!-- 验证码 -->
 			<img src="" id="verify_img" />
@@ -42,4 +45,20 @@
     </script>
 <![endif]-->
 </body>
+   <script src="/bbs/admin/Public/js/jq.js"></script>
+   <script type="text/javascript">
+    <!--
+    // 验证码生成  
+    var captcha_img = $('#captcha-container').find('img')  
+    var verifyimg = captcha_img.attr("src");  
+    captcha_img.attr('title', '点击刷新');  
+    captcha_img.click(function(){  
+        if( verifyimg.indexOf('?')>0){  
+            $(this).attr("src", verifyimg+'&random='+Math.random());  
+        }else{  
+            $(this).attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());  
+        }  
+    });  
+    //-->
+    </script>
 </html>
