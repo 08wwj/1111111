@@ -19,7 +19,7 @@
 			<p class="adm">
 				<span>管理员：</span>
 				<span class="adm_pic">&nbsp&nbsp&nbsp&nbsp</span>
-				<span class="adm_people">[houdunwang]</span>
+				<span class="adm_people">[<?php echo $_SESSION['name']?>]</span>
 			</p>
 			<p class="now_time">
 				今天是：2013.7.13 
@@ -40,7 +40,7 @@
 				<div class="text">
 					<ul class="con">
 				        <li class="nav_u">
-				        	<a href="" class="pos">前台首页</a>				        	
+				        	<a href="{:U('Home/index/add_category_show')}" class="pos">前台首页</a>				        	
 				        </li> 
 				    </ul>
 				
@@ -48,7 +48,7 @@
 			</div>
 
 			<div class="menu_box">
-				<h2>栏目管理</h2>
+				<h2>文章分类管理</h2>
 				<div class="text">
 					<ul class="con">
 				        <li class="nav_u">
@@ -65,7 +65,7 @@
 			</div>
 
 			 <div class="menu_box">
-				<h2>博文管理</h2>
+				<h2>文章管理</h2>
 				<div class="text">
 					<ul class="con">
 				        <li class="nav_u">
@@ -90,7 +90,10 @@
 				<div class="text">
 					<ul class="con">
 				        <li class="nav_u">
-				        	<a href="{:U('Home/index/add_nav')}" class="pos">添加导航栏</a>				        	
+				        	<a href="{:U('Home/index/nav')}" class="pos">添加导航栏</a>				        	
+				        </li> 
+                                        <li class="nav_u">
+				        	<a href="{:U('Home/index/nav')}" class="pos">导航栏列表</a>				        	
 				        </li> 
 				    </ul>
 				

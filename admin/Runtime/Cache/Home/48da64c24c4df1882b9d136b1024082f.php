@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<title></title>
-	<link rel="stylesheet" href="/css/public.css" />
-	<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="/js/public.js"></script>	
+	<link rel="stylesheet" href="/bbs/admin/Public/css/public.css" />
+	<script type="text/javascript" src="/bbs/admin/Public/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="/bbs/admin/Public/js/public.js"></script>	
 </head>
 <body>
 	<table class="table">
@@ -30,7 +30,7 @@
 		<?php }?>
 	</table>
 		<div class="page">
-			<a href="">1</a>
+			<?php echo $page?>
 		</div>
 </body>
 </html>

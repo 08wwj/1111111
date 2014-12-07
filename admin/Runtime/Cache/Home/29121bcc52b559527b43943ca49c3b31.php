@@ -20,15 +20,15 @@
 			<tr>
 				<td>链接</td>
 				<td>
-					<input type="text" name="url" class="title"/>
+					<input type="text" name="url" class="title" value="http://"/>
 
 				</td>
 			</tr>
                     <tr>
 				<td>是否显示</td>
 				<td>
-					<input type="radio" name="" value="1" checked="checked"/>显示
-					<input type="radio" name="" value="0" />关闭
+					<input type="radio" name="isset" value="1" checked="checked"/>显示
+					<input type="radio" name="isset" value="0" />关闭
 				</td>
 			</tr>
 			<tr>

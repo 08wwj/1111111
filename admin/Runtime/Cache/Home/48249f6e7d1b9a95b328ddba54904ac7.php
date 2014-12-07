@@ -34,9 +34,7 @@
             <?php }?>
 	</table>
 	<div class="page">
-		<a href="">1</a>
-		<a href="">2</a>
-		<a href="">3</a>
+		<?php echo $page ?>
 	</div>
 </body>
 </html>

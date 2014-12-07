@@ -10,7 +10,7 @@
 <body>
 	<div id="divBox">
 		<form action="{:U('Home/index/admin_login_pro')}" method="POST" id="loginForm">
-			<input type="text" id="username" name="admin_name"/>
+			<input type="text" id="userName" name="admin_name"/>
 			<input type="password" id="psd" name="admin_pwd"/>
 			<input type="" value="" id="verify" name="yzm"/>
                         
@@ -55,7 +55,7 @@
                         yzma.src="__URL__/yzm";
         }
         $('#loginForm').submit(function(){
-        if($('#username').val()==''){
+        if($('#userName').val()==''){
             alert('请输入用户名！');
             return false;
         }
@@ -75,7 +75,7 @@
             var _login_top=(_h-_n_h-100)/2;
             $('#login-panel').animate({'margin-top':_login_top+'px'},'slow');
         })()};
-        $('#admin_name').focus();
+        $('#userName').focus();
 
     //-->
     </script>
