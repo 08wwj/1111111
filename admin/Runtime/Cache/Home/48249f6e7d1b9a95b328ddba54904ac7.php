@@ -26,9 +26,8 @@
 			<td><a href=""><?php echo $val['c_title']?></a></td>
 			<td><?php echo $val['a_time']?></td>
 			<td>
-				<a href="">[置顶]</a>
 				<a href="">[编辑]</a>
-				<a href="">[删除]</a>
+                                <a href="/bbs/admin.php/Home/Index/article_delete/c_id/<?php echo $val['id']?>" class="del">[删除]</a>
 			</td>
 		</tr>
             <?php }?>

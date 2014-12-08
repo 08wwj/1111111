@@ -69,7 +69,7 @@ class IndexController extends Controller
            unset($_session[name]); 
            $this->display('login');
         }
-
+        //导航栏列表
         //将栏目添加到数据库
 	public function add_category_pro(){
 	$name=$_POST['name'];
@@ -79,9 +79,12 @@ class IndexController extends Controller
 	$data['c_title'] = $name;
 	$data['c_content'] = $content;
 	$aa=$category->add($data);
-      
+        if($aa){
+           $this->redirect('Index/category_list'); 
+        }
 	}
-	//插叙栏目数据
+       
+        //插叙栏目数据
 	public function category_list(){
 	$category = M("category"); // 实例化User对象    
         $count      = $category->count();// 查询满足要求的总记录数
@@ -93,6 +96,15 @@ class IndexController extends Controller
         $this->assign('page',$show);// 赋值分页输出
 	$this->display('check_category_show');
 	}
+        //删除分类信息
+        public function category_delete(){
+            $cid=$_GET['c_id'];
+           $category = M('category');
+            $aa=$category->delete($cid);
+            if($aa){
+               $this->redirect('Index/category_list');  
+            }
+        }
         //显示文章表单并查询分类
         public function article_show(){
            $category=M('category'); 
@@ -110,7 +122,10 @@ class IndexController extends Controller
        $data['c_title']=$aid;
 	$data['a_title'] = $title;
 	$data['a_content'] = $content;
-	$article->add($data);
+	$aa=$article->add($data);
+        if($aa){
+            $this->redirect('Index/article_list'); 
+        }
 	}
         //将文章列表显示
         public function article_list(){
@@ -124,6 +139,15 @@ class IndexController extends Controller
             $this->assign('page',$show);// 赋值分页输出
             $this->display('check_article');
         }
+          //删除文章信息
+        public function article_delete(){
+            $id=$_GET['c_id'];
+           $article = M('article');
+            $aa=$article->delete($id);
+            if($aa){
+               $this->redirect('Index/article_list');  
+            }
+        }
         //显示导航栏添加表单
         public function nav(){
             $this->display('add_nav');
@@ -135,10 +159,54 @@ class IndexController extends Controller
             $url=$_POST['url'];
             $isset=$_POST['isset'];
             $content=$_POST['content'];
+            $order=$_POST['order'];
             $data['n_name']=$title;
             $data['n_url']=$url;
             $data['isset']=$isset;
             $data['n_content']=$content;
-            $nav->add($data);
+            $data['ordera']=$order;
+            $aa=$nav->add($data);
+             if($aa){
+            $this->redirect('Index/nav_list'); 
+        }
+        }
+        //导航列表
+        public function nav_list(){
+            $nav=M('nav'); 
+            $count      = $nav->count();// 查询满足要求的总记录数
+            $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+            $show       = $Page->show();// 分页显示输出
+            // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+            $list = $nav->order('ordera')->limit($Page->firstRow.','.$Page->listRows)->select();
+            $this->assign('array',$list);// 赋值数据集
+            $this->assign('page',$show);// 赋值分页输出
+            $this->display('nav_list');
+        }
+         //删除导航栏
+        public function nav_delete(){
+            $n_id=$_GET['n_id'];
+            $nav = M('nav');
+            $aa=$nav->delete($n_id);
+            if($aa){
+               $this->redirect('Index/nav_list');  
+            }  
+        }
+        //开启导航
+        public function nav_issetb(){
+        $n_id=$_GET['n_id'];
+        $nav = M("nav");//实例化User对象
+        $aa=$nav-> where("n_id='".$n_id."'")->setField('isset','1');
+        if($aa){
+        $this->redirect('Index/nav_list');    
+        }
+        }
+        //关闭导航
+        public function nav_isseta(){
+         $n_id=$_GET['n_id'];
+        $nav = M("nav");//实例化User对象
+        $aa=$nav-> where("n_id='".$n_id."'")->setField('isset','0');
+        if($aa){
+        $this->redirect('Index/nav_list');    
+        }
         }
 }

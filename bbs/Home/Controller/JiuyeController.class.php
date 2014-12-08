@@ -4,26 +4,21 @@ use Think\Controller;
 header("content-type:text/html;charset=utf-8");
 class JiuyeController extends Controller {
     public function index(){
-        $Jiuye = M("Jiuye");
+        $Jiuye = M("jiuye");
+        $Jiuye1 = M("jiuye1");
         $list = $Jiuye->select();
+        $res = $Jiuye1->select();
         $this->assign('list',$list);
+        $this->assign('res',$res);
         $this->display();
     }
-    public function add(){
+    public function detial(){
+        $id = $_GET['id'];
+        $Jiuye1 = M("jiuye1");
+      //  $list = $Jiuye1->select();
+        $li = $Jiuye1->find($id);
+       // var_dump($li);die;
+        $this->assign("li",$li);
         $this->display();
-    }
-    public function insert(){
-        $Jiuye = M("Jiuye"); 
-        $data['student_name'] = $_POST['student_name'];
-        $data['school_name'] = $_POST['school_name'];
-        $data['job_time'] = $_POST['job_time'];
-        $data['job_company'] = $_POST['job_company'];
-        $data['work_money'] = $_POST['work_money'];
-        $res = $Jiuye->add($data);
-        if($res){
-                $this->success('添加成功！',U('Index/index'));
-        }else{
-                $this->error('添加失败！');
-        } 
     }
 }
