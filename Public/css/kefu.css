@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+a {outline: none;}
+a:active {star:expression(this.onFocus=this.blur());}
+*html{
+    background-image:url(about:blank);
+    background-attachment:fixed;
+	overflow-x:hidden;
+	}
+	.fixed{ position:fixed; float:right;
+    _position:absolute;
+    top:200px;
+    right:0px;
+    _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+	 _margin-bottom:130px;
+	
+	  overflow:hidden;}
+	.fixed .f_left{background:url(../images/float_s.gif) no-repeat 0 -396px; width:29px; height:119px; float:left; margin-top:100px; cursor:pointer;}
+	.fixed .f_right{float:left; width:130px;}
+	.fixed .f_right .fr_c1{ background:url(../images/float_bg.gif) no-repeat; width:130px; height:15px;}
+	.fixed .f_right .fr_c2{ background:url(../images/float_bg.gif) repeat-y -262px 0; width:130px; _margin-top:-2px;}
+	.fixed .f_right .fr_c2 ul{ }
+	.fixed .f_right .fr_c2 ul li.fr_c2_li1{border-bottom:1px solid #ace5f9; color:#40B8EF; font-size:14px; font-weight:bold; text-align:center;}
+	.fixed .f_right .fr_c2 ul li.fr_c2_li2 div{ background:url(../images/wpa_preview_a02.png); width:77px; height:22px; margin:0 auto; margin-top:7px; cursor:pointer;}
+	.fixed .f_right .fr_c2 ul li.fr_c2_li3 div#nobold{background:url(../images/mm.png); display:block; width:130px; height:22px; margin:0 auto; margin-top:7px;}
+	.fixed .f_right .fr_c2 ul li{ overflow:hidden; border-bottom:1px solid #e6e5e4; height:36px; width:102px; margin-left:14px; line-height:36px;}
+	.fixed .f_right .fr_c4{ background:url(../images/float_bg.gif) repeat-y -262px 0; width:130px;}
+	.fixed .f_right .fr_c4 ul li{ overflow:hidden; border-bottom:1px solid #e6e5e4; height:36px; width:102px; margin-left:14px; line-height:36px;}
+	.fixed .f_right .fr_c4 ul li.fr_c4_li1{border-bottom:1px solid #ace5f9; color:#40B8EF; font-size:14px; font-weight:bold; text-align:center;}
+	.fixed .f_right .fr_c4 ul li.fr_c4_li2 div{ background:url(../images/float_s.gif) no-repeat 0 -268px; text-indent:20px; font-size:12px; font-weight:normal; color:#444444;}
+	.fixed .f_right .fr_c3{width:126px; height:57px; background:url(../images/webZx_bg.jpg) no-repeat; padding:8px 0 0 4px;}
+	.fixed .f_right .fr_c6{ background:url(../images/float_bg.gif) repeat-y -262px 0; width:130px;}
+	.fixed .f_right .fr_c6 ul li{ overflow:hidden; border-bottom:1px solid #e6e5e4; height:36px; width:102px; margin-left:14px; line-height:36px;}
+	.fixed .f_right .fr_c6 ul li a{color:rgb(255, 153, 51);}
+	.fixed .f_right .fr_c6 ul li a:hover{color:#f00;}
+	.fixed .f_right .fr_c6 ul li.fr_c6_li1{border-bottom:1px solid #ace5f9; color:#40B8EF; font-size:14px; font-weight:bold; text-align:center;}
+	.fixed .f_right .fr_c6 ul li.fr_c6_li2 div{margin-left:14px; background:url(../images/float_s.gif) no-repeat 0 -123px; text-indent:25px; text-align:left; font-size:12px; width:130px; height:25px; cursor:pointer;}
+	.fixed .f_right .fr_c6 ul li.fr_c6_li3 div{margin-left:12px; background:url(../images/float_s.gif) no-repeat 0 -212px; text-indent:28px; text-align:left; font-size:12px;}
+	.fixed .f_right .fr_c6 ul li.fr_c6_li2 div a,.fixed .f_right .fr_c6 ul li.fr_c6_li3 div a{color:#444;}
+	.fixed .f_right .fr_c6 ul li.fr_c6_li2 div a:hover,.fixed .f_right .fr_c6 ul li.fr_c6_li3 div a:hover{color:#ffa64d;}
+	.fixed .f_right .fr_c7{ background:url(../images/float_bg.gif) no-repeat -131px 0; width:130px; height:15px;}
