@@ -43,7 +43,7 @@
                         <tr>
 				<td>是否显示</td>
 				<td>
-                                    显示：<input type='radio'  checked="checked" name='is_show' value='1' />不显示：<input type='radio' name='is_show' value='0'/>
+                                    显示<input type='radio'  checked="checked" name='is_show' value='1' />&nbsp;&nbsp;&nbsp;&nbsp;不显示<input type='radio' name='is_show' value='0'/>
 				</td>
 			</tr>
 			<tr>

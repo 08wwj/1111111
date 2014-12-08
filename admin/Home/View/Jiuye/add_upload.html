@@ -6,24 +6,33 @@
 	<title></title>
 </head>
 <body>
-	<form action="__URL__/edit_category_pro" method="post">
+	<form action="{:U('Home/Jiuye/add_upload_pro')}" method="post" enctype="multipart/form-data">
 		<table class="table">
-			<tr >
-				<td class="th" colspan="2">修改栏目</td>
+			<tr>
+				<td class="th" colspan="2">个人形象上传</td>
 			</tr>
 			<tr>
-				<td>栏目名称</td>
-                                <td><input type="text" name="c_title" value="<?php echo $list['c_title']?>"/><input type="hidden" name="c_id" value="<?php echo $list['c_id']?>"/></td>
-			</tr>
-			<tr>
-				<td>描述</td>
+				<td>形象描述</td>
 				<td>
-					<textarea name="c_content" id="description" class="textarea"><?php echo $list['c_content']?></textarea>
+					<input type="text" name="description" class="title"/>
+				</td>
+			</tr>
+			<tr>
+				<td>形象视频</td>
+				<td>
+					<input type="text" name="video" class="title"/>
+
+				</td>
+			</tr>
+			<tr>
+				<td>形象图片</td>
+				<td>
+					<input type="file" name="image" class="title"/>
 				</td>
 			</tr>
 			<tr>
 				<td colspan="2">
-					<input type="submit" value="修改" class="input_button"/>
+					<input type="submit" value="添加" class="input_button"/>
 					<input type="reset" class="input_button"/>
 				</td>
 			</tr>

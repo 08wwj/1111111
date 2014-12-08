@@ -155,7 +155,6 @@
 <SCRIPT type=text/javascript src="/bbs/Public/js/jquery.js"></SCRIPT>
 <SCRIPT type=text/javascript src="/bbs/Public/js/bbs/Public/index.js"></SCRIPT>
 <SCRIPT type=text/javascript>kfguin="800068868";ws="www.itcast.cn"; companyname=""; welcomeword=""; type="1";</SCRIPT>
-<SCRIPT src="/bbs/Public/js/kf.js" type=text/javascript></SCRIPT>
 <link href="/bbs/Public/css/init.css" mce_href="/bbs/Public/css/init.css" rel="stylesheet" type="text/css" />
 <link href="/bbs/Public/css/kefu.css" mce_href="/bbs/Public/css/kefu.css" rel="stylesheet" type="text/css" />
 <!--[if lte IE 6]>

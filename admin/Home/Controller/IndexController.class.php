@@ -83,7 +83,6 @@ class IndexController extends Controller
            $this->redirect('Index/category_list'); 
         }
 	}
-       
         //插叙栏目数据
 	public function category_list(){
 	$category = M("category"); // 实例化User对象    
@@ -104,6 +103,30 @@ class IndexController extends Controller
             if($aa){
                $this->redirect('Index/category_list');  
             }
+        }
+        //显示修改分类信息的表单
+        public function edit_category_show(){
+            $c_id=$_GET['c_id'];
+              $category=M('category'); 
+          $condition = array( 'c_id' =>$c_id);
+            $array=$category->where($condition)->find();
+            $this->assign('list',$array); 
+            $this->display();
+        }
+        //修改分类信息
+        public function edit_category_pro(){
+        $id=$_POST['c_id'];    
+       // echo $id;die;
+        $c_title=$_POST['c_title'];
+        $c_content=$_POST['c_content'];
+        $category=M("category");
+        $data=array('c_title'=>$c_title,'c_content'=>$c_contnt);
+        //var_dump($data);die;
+        $a=$category->where("c_id='$id'")->setField($data); //更新个别字段的值，可以使用setField方法。
+        if($a){
+            $this->redirect('index/category_list');
+        }
+
         }
         //显示文章表单并查询分类
         public function article_show(){
@@ -147,6 +170,32 @@ class IndexController extends Controller
             if($aa){
                $this->redirect('Index/article_list');  
             }
+        }
+        //编辑文章信息
+        public function edit_article_show(){
+            $id=$_GET['id'];
+            $article=M('article');
+            $category=M('category');
+            $array=$category->select();
+            $condition = array( 'id' =>$id);
+            $list=$article->where($condition)->find();
+            $this->assign('list',$list);
+            $this->assign('array',$array);
+            $this->display();
+        }
+        //将文章信息保存到数据库
+        public function edit_article_pro(){
+            $a_title=$_POST['a_title'];
+            $id=$_POST['id'];
+             $title=$_POST['c_title'];
+            $content=$_POST['content'];
+            $article = M("article"); // 实例化User对象
+        // 更改用户的name和email的值
+        $data = array('a_title'=>$a_title,'c_title'=>$title,'a_content'=>$content);
+        $aa=$article-> where("id='".$id."'")->setField($data);
+            if($aa){
+            $this->redirect('Index/article_list'); 
+        }
         }
         //显示导航栏添加表单
         public function nav(){
@@ -209,4 +258,55 @@ class IndexController extends Controller
         $this->redirect('Index/nav_list');    
         }
         }
+        //添加视频表单
+        public function add_video(){
+            $this->display();           
+        }
+        //添加视频
+        public function add_video_pro(){
+        // echo '<pre>';
+        //var_dump($_FILES['v_image']['name']);
+        //var_dump($_POST);
+        //die;
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize = 3145728 ;// 设置附件上传大小
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath = './video/'; // 设置附件上传根目录
+        $upload->savePath = ''; // 设置附件上传（子）目录
+        // 上传文件
+        $info = $upload->upload();
+        if(!$info) {
+  // 上传错误提示错误信息
+            $this->error($upload->getError());
+        }else{
+    //$this->success('上传成功！');
+        }
+        //die;
+        $v_title = $_POST['v_title'];
+        $v_image = $_FILES['v_image']['name'];
+        $v_link = $_POST['v_link'];
+        $v_desc = $_POST['v_desc'];
+        $data['v_title'] = $v_title;
+        $data['v_image'] = $v_image;
+        $data['v_link'] = $v_link;
+        $data['v_desc'] = $v_desc;
+        $model = M("b_vadio");
+        //var_dump($_POST);
+        $result = $model->add($data);
+        //var_dump($result);
+        if($result) {
+                //$this->success('添加成功！',U("Admin/video_show"));
+                $this->redirect("index/video_show");
+                //$this->display("Admin:video_show");
+        }else{
+                $this->error('写入错误！');
+        }
+    }
+    //显示视频列表
+    public function video_show(){
+       $model = M("b_vadio");
+       $list=$model->select();
+       $this->assign('list',$list);
+       $this->display();
+    }
 }

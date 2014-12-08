@@ -7,11 +7,10 @@ class ShiziController extends Controller{
 	public function add_shizi(){
             $position=M('zhiwu');
             $list=$position->select();
-            var_dump($list);
             $this->assign('list',$list);
             $this->display("add_shizi");
 	}
-	public function insert_shizi(){
+        public function insert_shizi(){
             $shizi=M('shizi');
             $data['s_name']=$_POST['s_name'];
             $data['z_name']=$_POST['z_name'];
@@ -53,11 +52,10 @@ class ShiziController extends Controller{
             $s_id=$_POST['s_id'];
             $is_show=$_POST['is_show'];   
             if($is_show==1){
-                $is_show=0;
+                $data['is_show']=0;
             }else{
-                $is_show=1;
+               $data['is_show']=1;
             }
-            $data['is_show']=$is_show;
             $shizi->where("s_id=$s_id")->save($data);      
         }    
         public function edit_shizi(){
@@ -71,8 +69,21 @@ class ShiziController extends Controller{
             $this->assign('position',$lists);
             $this->display('edit_shizi');
         }
-
-        
+        public function delete_shizi(){
+            $shizi= M("shizi"); 
+            $s_id=$_GET['s_id'];
+           // var_dump($z_id);
+            $res=$position->where("s_id=$s_id")->delete(); // 删除id为5的用户数据
+            if($res){
+                redirect("shizi_list");
+            }
+        }
+        public function is_del(){
+            $shizi=M('shizi');
+            $s_id=$_POST['s_id']; 
+            $data['is_del']=0;            
+            $shizi->where("s_id=$s_id")->save($data);
+        }
 }
 ?>
 
