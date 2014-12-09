@@ -5,8 +5,15 @@ header("content-type:text/html;charset=utf-8");
 class JiuyeController extends Controller {
     public function index(){
         $Jiuye = M("jiuye");
+        $count = $Jiuye->count();
+        $Page  = new \Think\Page($count,5);
+        $show  = $Page->show();
+        $list  = $Jiuye->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+        
         $Jiuye1 = M("jiuye1");
-        $list = $Jiuye->select();
+        //$list = $Jiuye->select();
         $res = $Jiuye1->select();
         $this->assign('list',$list);
         $this->assign('res',$res);
