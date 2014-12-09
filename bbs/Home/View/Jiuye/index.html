@@ -33,11 +33,11 @@ size:12px;background-color:#ecf6fd;">
 <h4><span class="fr" style="font-weight: normal; margin-right: 30px"><a href="#">更多 </a></span>12月20日PHP就业班部分学员就业喜报</h4>
 <div><img alt="" src="http://www.itcast.cn/files/image/201408/20140811153535947.jpg" style="width: 628px; height: 266px;" /></div>
 </div>
-                         <form action="{:U('Jiuye/search')}" method="post">
-                           姓名：<input type="text" name="student_name" value="<?php echo @$_POST['student_name'];?>">
-                           毕业学校：<input type="text" name="school_name" value="<?php echo @$_POST['school_name'];?>">
-                           <input type="submit" value="搜索">
-                         </form>
+<form action="{:U('Jiuye/search')}" method="post">
+姓名：<input type="text" name="student_name" value="<?php echo @$_REQUEST['student_name'];?>">
+毕业学校：<input type="text" name="school_name" value="<?php echo @$_REQUEST['school_name'];?>">
+<input type="submit" value="搜索">
+</form>
 <table border="0" cellpadding="0" cellspacing="0" class="jiuye" width="97%">
 <tbody>
 	<tr>

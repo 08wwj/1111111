@@ -31,15 +31,6 @@ class JiuyeController extends Controller {
         $Jiuye = M("jiuye");
         $student_name = $_POST['student_name'];
         $school_name = $_POST['school_name'];
-      //  $where = " where 1=1";
-		include "/sphinxapi.php";
-        $sphinxapi = new SphinxClient(); 
-        $sphinxapi->SetServer('127.0.0.1', 9312); 
-        $sphinxapi->SetMatchMode(SPH_MATCH_ALL);
-        $result = $sphinxapi->Query($student_name,"*"); 
-        var_dump($result);die;
-        $key = array_keys($result['matches']);
-        $id = implode(',',$key);
         if(!empty($student_name)) {
               //  $where .= " and student_name like '%$student_name%'";
             $map['student_name'] = array('like',"%{$student_name}%");
@@ -48,11 +39,9 @@ class JiuyeController extends Controller {
           //      $where .= " and school_name like '%$school_name%'";
             $map['school_name'] = array('like',"%{$school_name}%");
         }
-        session('student_name',$map);  
-     //   $sql="select * from jiuye" . $where;
-     //   $mapcount  = $Jiuye->where($where)->count();
-     //   echo $mapcount;die;
-        $map1 = session('student_name');
+        session('name',$map);  
+ 
+        $map1 = session('name');
        // var_dump($map1);
         $count = $Jiuye -> where($map1) -> count();
        // echo $count;
@@ -66,13 +55,8 @@ class JiuyeController extends Controller {
         -> select();
         //var_dump($list);
         $showpage = $Page -> show();
-        
-       /* 
-        $list = $Jiuye->query($sql);
-        $this->assign("list",$list);
-        */
-         $Jiuye1 = M("jiuye1");
-        //$list = $Jiuye->select();
+  
+        $Jiuye1 = M("jiuye1");
         $res = $Jiuye1->select();
         $this->assign('res',$res);
         $this -> assign('list',$list);
