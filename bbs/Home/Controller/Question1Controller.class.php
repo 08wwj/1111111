@@ -11,15 +11,6 @@ class Question1Controller extends Controller {
         //var_dump($array);die;
         $this->assign('nav',$nav); 
     }
-    public function __construct() {
-        parent::__construct();
-         $nav=M('nav');
-        $condition = array( 'isset' =>1);
-        $nav=$nav->where($condition)->select();
-        //$this->assign('nv',$array);
-        //var_dump($array);die;
-        $this->assign('nav',$nav); 
-    }
     public function index(){
         $question = M("question"); //实例化p_class对象
         $count=$question->count(); //查询总记录数
