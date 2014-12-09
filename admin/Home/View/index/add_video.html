@@ -21,6 +21,28 @@
 				<td>缩略图</td>
 				<td><input type="file" name="v_image"/></td>
 			</tr>
+                        <tr>
+				<td>视频分类</td>
+				<td>
+					<select name='c_title'>
+						<option value="">====选择栏目====</option> 
+                                                <?php foreach($array as $key => $val){?>
+                                                <option value="<?php echo $val['c_title']?>"><?php echo $val['c_title']?></option>
+                                                <?php }?>
+					</select>
+				</td>
+			</tr>
+                    <tr>
+				<td>主讲老师</td>
+				<td>
+					<select name='teach'>
+						<option value="">====选择栏目====</option> 
+                                                <?php foreach($shizi as $key => $val){?>
+                                                <option value="<?php echo $val['s_name']?>"><?php echo $val['s_name']?></option>
+                                                <?php }?>
+					</select>
+				</td>
+			</tr>
 			<tr>
 				<td>视频标签</td>
 				<td>

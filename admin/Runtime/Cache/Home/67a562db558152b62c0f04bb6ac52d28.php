@@ -17,6 +17,7 @@
 			<th>ID</th>
 			<th>课程分班名称</th>
 			<th>课程分班内容</th>
+                        <th>课程图片</th>
 			<th>操作</th>
 		</tr> 
             <?php foreach($list as $k=>$v){?>
@@ -24,6 +25,7 @@
 			<td><?php echo $v["p_id"]?></td>
 			<td><a href=""><?php echo $v["p_name"]?></a></td>
 			<td><?php echo $v["p_content"]?></td>
+                        <td><img src="/bbs/Public/<?php echo $v['p_image'];?>" width="200" height="200"></td>
 			<td>
 				<a href="/bbs/admin.php/Home/Peixun/uppeix/id/<?php echo $v['p_id'];?>">[编辑]</a>
                                 <a href="/bbs/admin.php/Home/Peixun/delpeix/id/<?php echo $v['p_id'];?>" class="del">[删除]</a>

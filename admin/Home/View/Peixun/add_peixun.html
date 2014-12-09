@@ -6,7 +6,7 @@
 	<title></title>
 </head>
 <body>
-	<form action="{:U('Home/Peixun/addpeixun')}" method="post">
+	<form action="{:U('Home/Peixun/addpeixun')}" method="post" enctype="multipart/form-data">
 		<table class="table">
 			<tr >
 				<td class="th" colspan="2">添加课程</td>
@@ -14,6 +14,11 @@
 			<tr>
 				<td>课程名称</td>
 				<td><input type="text" name="p_name"/></td>
+			</tr>
+                    
+                       <tr>
+				<td>课程图像</td>
+				<td><input type="file" name="p_image"/></td>
 			</tr>
                         <tr>
 				<td>是否显示</td>

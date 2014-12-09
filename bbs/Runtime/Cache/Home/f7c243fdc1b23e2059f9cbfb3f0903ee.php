@@ -42,19 +42,10 @@
 		<p class="fr"><img src="/bbs/Public/images/topword.gif" alt="改变中国教育，我们正在行动..." class="png"/></p>
 	</div>
 	<div class="clear"></div>
-		<ul id="nav">
-	<li><a href="http://php.itcast.cn" id="nav_main">首 页</a></li>
-	<li class="widt"><a href="http://php.itcast.cn/php/course.shtml" id="nav_course">PHP培训课程</a> </li> 
-	<li class="widt"><a href="http://php.itcast.cn/php/video.shtml" id="nav_videodl">PHP视频下载</a> </li>
-    <li id="nav_personnel"><a href="http://www.itcast.cn/channel/personnel.shtml">人才服务</a></li>
-    <li id="nav_life"><a href="http://www.itcast.cn/channel/campus.shtml">校园生活</a> </li>
-    <li id="nav_teacher"><a href="<?php echo U('Shizi/index');?>">师资力量</a> </li>
-    <li id="nav_job"><a href="http://php.itcast.cn/php/jyjb.shtml">就业信息</a> </li>
-    <li id="nav_flow"><a href="http://www.itcast.cn/channel/flow.shtml">报名流程</a> </li>
-    <li id="nav_book"><a href="http://www.itcast.cn/channel/book.shtml">原创教材</a> </li>
-	<li id="nav_question"><a href="/php/question.shtml">常见问题</a></li>
-	<li><a href="http://www.itcast.cn/channel/contact.shtml">来校路线</a></li>
-	<li><a href="http://bbs.itcast.cn" target="_blank">技术论坛 </a></li>
+	<ul id="nav">
+           <?php foreach($nav as $key => $val){?>
+	<li nid="nav_life"><a href="/bbs/<?php echo $val['n_url']?>" id="nav_main"><?php echo $val['n_name']?></a></li>
+	<?php }?>
 </ul>
 	</div>		
 <div id="box">
@@ -278,7 +269,6 @@
 <SCRIPT type=text/javascript src="/bbs/Public/js/jquery.js"></SCRIPT>
 <SCRIPT type=text/javascript src="/bbs/Public/js/bbs/Public/index.js"></SCRIPT>
 <SCRIPT type=text/javascript>kfguin="800068868";ws="www.itcast.cn"; companyname=""; welcomeword=""; type="1";</SCRIPT>
-
 <link href="/bbs/Public/css/init.css" mce_href="/bbs/Public/css/init.css" rel="stylesheet" type="text/css" />
 <link href="/bbs/Public/css/kefu.css" mce_href="/bbs/Public/css/kefu.css" rel="stylesheet" type="text/css" />
 <!--[if lte IE 6]>

@@ -6,29 +6,33 @@
 	<title></title>
 </head>
 <body>
-	<form action="{:U('Home/Peixun/updatepei')}" method="post">
+	<form action="{:U('Home/Peixun/updatepei')}" method="post" enctype="multipart/form-data">
 		<table class="table">
-                    <input type="text" name="p_id" value="<?php echo $list['p_id']?>">
+                    <input type="hidden" name="p_id" value="<?php echo $list['p_id']?>">
                     
 			<tr >
 				<td class="th" colspan="2">修改课程分班</td>
 			</tr>
 			<tr>
 				<td>课程分班名称</td>
-				<td><input type="text" name="" value="<?php echo $list['p_name']?>"/></td>
+				<td><input type="text" name="p_name" value="<?php echo $list['p_name']?>"/></td>
+			</tr>
+                         <tr>
+				<td>课程图像</td>
+				<td><input type="file" name="p_image"/><img src="__PUBLIC__/<?php echo $list['p_image']?>"</td>
 			</tr>
 			<tr>
 				<td>开启状态</td>
 				<td>
-                                    <input type="radio" name="" value="<?php echo $list['p_show']?>" checked="checked"/>开启
-					<input type="radio" name="" value="<?php echo $list['p_show']?>" />关闭
+                                    <input type="radio" name="p_show" value="<?php echo $list['p_show']?>" checked="checked"/>开启
+					<input type="radio" name="p_show" value="<?php echo $list['p_show']?>" />关闭
 				</td>
 
 			</tr>
 			<tr>
 				<td>内容</td>
 				<td>
-                                    <textarea name="" id="description" class="textarea" value="<?php echo $list['p_content']?>"><?php echo $list['p_content']?></textarea>
+                                    <textarea id="description" class="textarea" name="p_content" value="<?php echo $list['p_content']?>"><?php echo $list['p_content']?></textarea>
 				</td>
 			</tr>
 			<tr>

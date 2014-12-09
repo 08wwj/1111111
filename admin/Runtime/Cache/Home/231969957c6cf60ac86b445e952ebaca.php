@@ -13,12 +13,12 @@
 			<input type="text" id="userName" name="admin_name"/>
 			<input type="password" id="psd" name="admin_pwd"/>
 			<input type="" value="" id="verify" name="yzm"/>
-                        
 			<input type="submit" id="sub" value=""/>
 			<!-- 验证码 -->
                         <div id='yzma'>
 			<img src='/bbs/admin.php/Home/Index/yzm' onclick="gai()"  width="80"  height='25' id='yzm'/> 
                         </div>
+                        <div id='zhu'><a href="<?php echo U('Home/index/zhuce');?>"><img src="/bbs/admin/Public/images/medish.jpg"></a></div>
 		</form>
 		<div class="four_bj">
 			<p class="f_lt"></p>

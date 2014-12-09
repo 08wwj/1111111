@@ -24,7 +24,7 @@
 			<div id='time'></div>
 			<p class="out">
 				<span class="out_bg">&nbsp&nbsp&nbsp&nbsp</span>&nbsp
-				<a href="" target="_self">退出</a>
+				<a href="{:U('Home/index/loginout')}" target="_self">退出</a>
 			</p>
 		</div>
 	</div>
@@ -122,13 +122,13 @@
                                     
                                     <ul class="con">
 				        <li class="nav_u">
-				        	<a href="{:U('Home/Peixun/course')}" class="pos">添加课程</a>				        	
+				        	<a href="{:U('Home/Peixun/add_course')}" class="pos">添加课程</a>				        	
 				        </li> 
 				    </ul>  
 
 				    <ul class="con">
 				        <li class="nav_u">
-				        	<a href="{:U('Home/index/category_list')}" class="pos">查看课程</a>    	
+				        	<a href="{:U('Home/Peixun/check_course')}" class="pos">查看课程</a>    	
 				        </li> 
 				    </ul>   
 				</div>
@@ -175,24 +175,19 @@
 				</ul>
 				</div>
 			</div>
-                        <div class="menu_box">
-				<h2>导航栏管理</h2>
-				<div class="text">
-					<ul class="con">
-				        <li class="nav_u">
-				        	<a href="{:U('Home/index/nav')}" class="pos">添加导航栏</a>				        	
-				        </li> 
-				    </ul>
-                                    <ul class="con">
-                                    <li class="nav_u">
-				        	<a href="{:U('Home/index/nav_list')}" class="pos">导航栏列表</a>				        	
-				    </li> 
-				</ul>
-				</div>
-			</div>
 			<div class="menu_box">
 				<h2>视频管理</h2>
 				<div class="text">
+                                    <ul class="con">
+				        <li class="nav_u">
+				        	<a href="{:U('Home/index/add_video_category')}" class="pos">添加视频分类</a>
+				        </li> 
+				    </ul>
+                                     <ul class="con">
+				        <li class="nav_u">
+				        	<a href="{:U('Home/index/category_video_list')}" class="pos">视频分类列表</a>
+				        </li> 
+				    </ul>
 					<ul class="con">
 				        <li class="nav_u">
 				        	<a href="{:U('Home/index/add_video')}" class="pos">上传视频</a>
@@ -212,12 +207,12 @@
 				<div class="text">
 					<ul class="con">
 				        <li class="nav_u">
-				        	<a href="" class="pos">系统信息</a>				        	
+				        	<a href="{:U('Home/Question/index')}" class="pos">添加问题</a>				        	
 				        </li> 
 				    </ul>
 				    <ul class="con">
 				        <li class="nav_u">
-				        	<a href="" class="pos">密码修改</a>				        	
+				        	<a href="{:U('Home/Question/listquestion')} " class="pos">查看问题</a>				        	
 				        </li> 
 				    </ul>
 				

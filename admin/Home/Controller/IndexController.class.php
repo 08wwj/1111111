@@ -3,13 +3,19 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller
 {
-	public function login(){
-	$this->display();
-	}
+    public function ll() {
+        if(empty($_SESSION['name'])){
+           $this->redirect('index/login');  
+        }
+    }
 	public function index(){
+            $this->ll();
 	$this->display();
 	}
-        /** 
+          public function login(){
+    $this->display();
+    }
+     /** 
         *  
         * 验证码生成 
         */  
@@ -35,6 +41,7 @@ class IndexController extends Controller
         }
         //处理登陆
         public function admin_login_pro(){
+              
             //print_r($_POST);
             $code=$_POST['yzm'];
             $name=$_POST['admin_name'];
@@ -64,14 +71,32 @@ class IndexController extends Controller
                       } 
             }
         }
+        //用户注册
+        public function zhuce_pro(){
+            $user=M('user');
+            $name=$_POST['username'];
+            $psd=$_POST['psd'];
+            $data['u_name'] = $name;
+	$data['u_password'] = md5($psd);
+	$aa=$user->add($data);
+        if($aa){
+           $this->redirect('Index/login'); 
+        }
+        }
         //用户退出
         public function loginout(){
-           unset($_session[name]); 
+            $this->ll();
+           unset($_SESSION['name']); 
            $this->display('login');
+        }
+        //加载注册页面
+        public function zhuce(){
+            $this->display();
         }
         //导航栏列表
         //将栏目添加到数据库
 	public function add_category_pro(){
+        $this->ll();
 	$name=$_POST['name'];
 	$content=$_POST['content'];
 	$category = M("category"); // 实例化User对象
@@ -85,6 +110,7 @@ class IndexController extends Controller
 	}
         //插叙栏目数据
 	public function category_list(){
+                $this->ll();
 	$category = M("category"); // 实例化User对象    
         $count      = $category->count();// 查询满足要求的总记录数
         $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
@@ -97,6 +123,7 @@ class IndexController extends Controller
 	}
         //删除分类信息
         public function category_delete(){
+                $this->ll();
             $cid=$_GET['c_id'];
            $category = M('category');
             $aa=$category->delete($cid);
@@ -106,6 +133,7 @@ class IndexController extends Controller
         }
         //显示修改分类信息的表单
         public function edit_category_show(){
+                $this->ll();
             $c_id=$_GET['c_id'];
               $category=M('category'); 
           $condition = array( 'c_id' =>$c_id);
@@ -115,12 +143,13 @@ class IndexController extends Controller
         }
         //修改分类信息
         public function edit_category_pro(){
+                $this->ll();
         $id=$_POST['c_id'];    
        // echo $id;die;
         $c_title=$_POST['c_title'];
         $c_content=$_POST['c_content'];
         $category=M("category");
-        $data=array('c_title'=>$c_title,'c_content'=>$c_contnt);
+        $data=array('c_title'=>$c_title,'c_content'=>$c_content);
         //var_dump($data);die;
         $a=$category->where("c_id='$id'")->setField($data); //更新个别字段的值，可以使用setField方法。
         if($a){
@@ -130,6 +159,7 @@ class IndexController extends Controller
         }
         //显示文章表单并查询分类
         public function article_show(){
+                $this->ll();
            $category=M('category'); 
            $array = $category->select();
 	//print_r($array);
@@ -138,6 +168,7 @@ class IndexController extends Controller
         }
         //将文章保存到数据库
 	public function add_article_show(){   
+                $this->ll();
 	$title=$_POST['title'];
         $aid=$_POST['a_id'];
 	$content=$_POST['content'];
@@ -152,6 +183,7 @@ class IndexController extends Controller
 	}
         //将文章列表显示
         public function article_list(){
+                $this->ll();
             $article=M('article');
             $count      = $article->count();// 查询满足要求的总记录数
             $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
@@ -164,6 +196,7 @@ class IndexController extends Controller
         }
           //删除文章信息
         public function article_delete(){
+                $this->ll();
             $id=$_GET['c_id'];
            $article = M('article');
             $aa=$article->delete($id);
@@ -173,6 +206,7 @@ class IndexController extends Controller
         }
         //编辑文章信息
         public function edit_article_show(){
+                $this->ll();
             $id=$_GET['id'];
             $article=M('article');
             $category=M('category');
@@ -185,6 +219,7 @@ class IndexController extends Controller
         }
         //将文章信息保存到数据库
         public function edit_article_pro(){
+                $this->ll();
             $a_title=$_POST['a_title'];
             $id=$_POST['id'];
              $title=$_POST['c_title'];
@@ -199,10 +234,12 @@ class IndexController extends Controller
         }
         //显示导航栏添加表单
         public function nav(){
+                $this->ll();
             $this->display('add_nav');
         }
         //添加导航
         public function add_nav(){
+                $this->ll();
             $nav=M('nav');
             $title=$_POST['title'];
             $url=$_POST['url'];
@@ -221,6 +258,7 @@ class IndexController extends Controller
         }
         //导航列表
         public function nav_list(){
+                $this->ll();
             $nav=M('nav'); 
             $count      = $nav->count();// 查询满足要求的总记录数
             $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
@@ -233,6 +271,7 @@ class IndexController extends Controller
         }
          //删除导航栏
         public function nav_delete(){
+                $this->ll();
             $n_id=$_GET['n_id'];
             $nav = M('nav');
             $aa=$nav->delete($n_id);
@@ -242,6 +281,7 @@ class IndexController extends Controller
         }
         //开启导航
         public function nav_issetb(){
+                $this->ll();
         $n_id=$_GET['n_id'];
         $nav = M("nav");//实例化User对象
         $aa=$nav-> where("n_id='".$n_id."'")->setField('isset','1');
@@ -251,6 +291,7 @@ class IndexController extends Controller
         }
         //关闭导航
         public function nav_isseta(){
+                $this->ll();
          $n_id=$_GET['n_id'];
         $nav = M("nav");//实例化User对象
         $aa=$nav-> where("n_id='".$n_id."'")->setField('isset','0');
@@ -260,10 +301,18 @@ class IndexController extends Controller
         }
         //添加视频表单
         public function add_video(){
-            $this->display();           
+          $this->ll();
+          $model = M("category_video");  
+          $array=$model->select();
+          $this->assign('array',$array);
+          $model = M("shizi");  
+          $shizi=$model->select();
+          $this->assign('shizi',$shizi);
+          $this->display();           
         }
         //添加视频
         public function add_video_pro(){
+                $this->ll();
         // echo '<pre>';
         //var_dump($_FILES['v_image']['name']);
         //var_dump($_POST);
@@ -282,14 +331,18 @@ class IndexController extends Controller
     //$this->success('上传成功！');
         }
         //die;
+        $a_title=$_POST['c_title'];
         $v_title = $_POST['v_title'];
         $v_image = $_FILES['v_image']['name'];
         $v_link = $_POST['v_link'];
         $v_desc = $_POST['v_desc'];
+        $teach=$_POST['teach'];
         $data['v_title'] = $v_title;
         $data['v_image'] = $v_image;
         $data['v_link'] = $v_link;
         $data['v_desc'] = $v_desc;
+        $data['c_title'] = $a_title;
+        $data['s_name'] = $teach;
         $model = M("b_vadio");
         //var_dump($_POST);
         $result = $model->add($data);
@@ -304,9 +357,84 @@ class IndexController extends Controller
     }
     //显示视频列表
     public function video_show(){
+            $this->ll();
        $model = M("b_vadio");
-       $list=$model->select();
-       $this->assign('list',$list);
+        $count      = $model->count();// 查询满足要求的总记录数
+        $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+        $show       = $Page->show();// 分页显示输出
+        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+        $list = $model->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('list',$list);// 赋值数据集
+        $this->assign('page',$show);// 赋值分页输出
        $this->display();
     }
+        //加载添加视频分类页面
+        public function add_video_category(){
+          $this->ll();
+         
+        $this->display(); 
+        }
+     //将栏目添加到数据库
+	public function video_category_pro(){
+        $this->ll();
+	$name=$_POST['name'];
+	$content=$_POST['content'];
+	$category = M("category_video"); // 实例化User对象
+	// 然后直接给数据对象赋值
+	$data['c_title'] = $name;
+	$data['c_content'] = $content;
+	$aa=$category->add($data);
+        if($aa){
+           $this->redirect('Index/category_video_list'); 
+        }
+	}
+        //显示插入视频分类信息
+	public function category_video_list(){
+        $this->ll();
+	$category = M("category_video"); // 实例化User对象    
+        $count      = $category->count();// 查询满足要求的总记录数
+        $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+        $show       = $Page->show();// 分页显示输出
+        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+        $list = $category->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('data',$list);// 赋值数据集
+        $this->assign('page',$show);// 赋值分页输出
+	$this->display('video_category_show');
+	}
+         //删除分类信息
+        public function category_video_delete(){
+                $this->ll();
+            $cid=$_GET['c_id'];
+           $category = M('category_video');
+            $aa=$category->delete($cid);
+            if($aa){
+               $this->redirect('Index/category_video_list');  
+            }
+        }
+        //显示修改分类信息的表单
+        public function edit_category_video(){
+                $this->ll();
+            $c_id=$_GET['c_id'];
+              $category=M('category_video'); 
+          $condition = array( 'c_id' =>$c_id);
+            $array=$category->where($condition)->find();
+            $this->assign('list',$array); 
+            $this->display();
+        }
+        //修改分类信息
+        public function edit_category_video_pro(){
+        $this->ll();
+        $id=$_POST['c_id'];    
+       //echo $id;die;
+        $c_title=$_POST['c_title'];
+        $c_content=$_POST['c_content'];
+        //echo $c_content;die;
+        $category=M("category_video");
+        $data=array('c_title'=>$c_title,'c_content'=>$c_content);
+        //var_dump($data);die;
+        $a=$category->where("c_id='$id'")->setField($data); //更新个别字段的值，可以使用setField方法。
+        if($a){
+            $this->redirect('index/category_video_list');
+        }
+        }
 }

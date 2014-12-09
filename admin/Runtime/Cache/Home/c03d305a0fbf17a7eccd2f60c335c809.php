@@ -35,7 +35,7 @@
 		<?php }?>
 	</table>
 		<div class="page">
-			<?php echo ($page); ?>
+			<?php echo $page ?>
 		</div>
 </body>
 </html>

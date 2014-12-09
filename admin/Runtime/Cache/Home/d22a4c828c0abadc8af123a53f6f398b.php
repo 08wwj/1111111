@@ -13,9 +13,9 @@
 		</tr>
 		<tr>
 			<td class="tdLittle1">ID</td>
-			<td class="tdLtitle4">讲师名称</td>
+			<td>讲师名称</td>
 			<td class="tdLittle2">职位名称</td>
-			<td>专业描述</td>
+			<td class="tdLtitle4">专业描述</td>
 			<td class="tdLtitle7">操作</td>
 		</tr>
             <?php foreach($list as $key => $val){?>
@@ -23,7 +23,7 @@
 			<td ><?php echo $val['s_id']?></td>
 			<td><?php echo $val['s_name']?></td>
 			<td><a href=""><?php echo $val['z_name']?></a></td>
-			<td><?php echo $val['s_content']?></td>
+			<td> <?php echo substr($val['s_content'],0,35).'........';?></td>
 			<td>
 				<a href="" onclick="is_show(<?php echo $val['s_id'];?>,<?php echo $val['is_show'];?>)">[<?php if($val['is_show']==1){echo '隐藏';}else{echo '显示';}?>]</a>
                                 <a href="<?php echo U('shizi/edit_shizi');?>?s_id=<?php echo $val['s_id'];?>">[编辑]</a>

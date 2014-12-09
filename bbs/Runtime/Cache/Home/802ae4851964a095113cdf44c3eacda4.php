@@ -43,19 +43,10 @@
 		<p class="fr"><img src="/bbs/Public/images/topword.gif" alt="改变中国教育，我们正在行动..." class="png"/></p>
 	</div>
 	<div class="clear"></div>
-		<ul id="nav">
-	<li><a href="http://php.itcast.cn" id="nav_main">首 页</a></li>
-	<li class="widt"><a href="http://php.itcast.cn/php/course.shtml" id="nav_course">PHP培训课程</a> </li> 
-	<li class="widt"><a href="http://php.itcast.cn/php/video.shtml" id="nav_videodl">PHP视频下载</a> </li>
-    <li id="nav_personnel"><a href="http://www.itcast.cn/channel/personnel.shtml">人才服务</a></li>
-    <li id="nav_life"><a href="http://www.itcast.cn/channel/campus.shtml">校园生活</a> </li>
-    <li id="nav_teacher"><a href="<?php echo U('Shizi/index');?>">师资力量</a> </li>
-    <li id="nav_job"><a href="http://php.itcast.cn/php/jyjb.shtml">就业信息</a> </li>
-    <li id="nav_flow"><a href="http://www.itcast.cn/channel/flow.shtml">报名流程</a> </li>
-    <li id="nav_book"><a href="http://www.itcast.cn/channel/book.shtml">原创教材</a> </li>
-	<li id="nav_question"><a href="/php/question.shtml">常见问题</a></li>
-	<li><a href="http://www.itcast.cn/channel/contact.shtml">来校路线</a></li>
-	<li><a href="http://bbs.itcast.cn" target="_blank">技术论坛 </a></li>
+	<ul id="nav">
+           <?php foreach($nav as $key => $val){?>
+	<li nid="nav_life"><a href="/bbs/<?php echo $val['n_url']?>" id="nav_main"><?php echo $val['n_name']?></a></li>
+	<?php }?>
 </ul>
 	</div>
 <div id="box">
@@ -64,25 +55,42 @@
     <div><img src="/bbs/Public/images/lefttop.gif"/></div>
     <div class="left_content2">
       <h4 class="ganyan"><span class="STYLE3">师资</span>介绍</h4>
-      <div class="teacher_z" style="height: auto; overflow: hidden">
-<div class="teacher">
-<p class="fl"><img alt="" src="/bbs/Public/images/20131217163413214.jpg" style="width: 155px; height: 189px;" /></p>
-<dl class="fr">
-	<dt>
-		<span class="blue"><strong>韩顺平</strong></span></dt>
-	<dt>
-		<strong>职 务：国内著名的软件培训高级讲师</strong></dt>
-	<dd>
-		韩顺平，毕业于清华大学，拥有九年大型项目开发和管理经验，曾任新浪网软件项目经理，使用PHP与JavaEE技术开发新浪网系统，北京点击科技公司高级软件工程师，用友软件股份有限公司U8事业部软件工程师，具有丰富的互联网开发经验。主持或参与《新浪邮件系统》、《橙红sns(社会化网络)网站》、《点击科技协同软件群组服务器端(Linux/solaris平台)》、《国家总参语音监控系统》、《英语学习机系统》、《用友erp(u8产品)系统》等项目。实战经验丰富，授课耐心细致，通俗易懂，勇于实践，勤于创新，授课风格贴近生活，授课语言生动风趣，多年来培训的学员已成功在用友、搜狐、淘宝、中软等知名企业就职。</dd>
-</dl>
-</div>
-<div></div>
-</div>
-<br />
-
+      
+	  <?php foreach($list as $k=>$v){ ?>
+	<div class="teacher_z" style="height: auto; overflow: hidden">
+		<div class="teacher">
+			<p class="fl">
+				<img alt="" src="/bbs/Public/<?php echo $v['s_image'];?>" style="width: 155px; height: 189px;" />
+			</p>
+			<dl class="fr">
+				<dt>
+                                <span class="blue"><strong><?php echo $v['s_name'];?></strong></span><strong>--<a href="<?php echo U('shizi/detail');?>?s_id=<?php echo $v['s_id'];?>" target="_blank"><span style="color: rgb(0, 0, 255);">在线试听精彩课程</span></a></strong></dt>
+				<dt><strong>职 务：<?php echo $v['z_name'];?></strong></dt>
+				<dd>
+                                    <?php echo $v['s_content'];?>
+				</dd>
+			</dl>
+		</div>
+		<div></div>
+	</div><br />
+	<?php } ?>
     </div>
+    <div class="page">
+		<?php echo $page;?>
+	</div>
     <div><img src="/bbs/Public/images/leftbottom.gif"/></div>
   </div>
+  
+
+
+
+
+
+
+
+
+
+
   <div id="right" class="fl">
     <h4 class="righttitle1 zhaopin"><span class="blue">讲师</span>招聘</h4>
     <div class="rightkuang1">

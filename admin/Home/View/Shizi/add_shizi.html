@@ -26,7 +26,7 @@
 			<tr>
 				<td>栏目</td>
 				<td>
-					<select name='a_id'>                                           
+					<select name='z_name'>                                           
 						<option value="">====选择栏目====</option> 
                                                 <?php foreach($list as $key => $val){?>
                                                 <option value="<?php echo $val['z_name']?>"><?php echo $val['z_name']?></option>
@@ -43,7 +43,7 @@
                         <tr>
 				<td>是否显示</td>
 				<td>
-                                    显示<input type='radio'  checked="checked" name='is_show' value='1' />&nbsp;&nbsp;&nbsp;&nbsp;不显示<input type='radio' name='is_show' value='0'/>
+                                    显示：<input type='radio'  checked="checked" name='is_show' value='1' />不显示：<input type='radio' name='is_show' value='0'/>
 				</td>
 			</tr>
 			<tr>

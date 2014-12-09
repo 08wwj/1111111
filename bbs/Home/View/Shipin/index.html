@@ -1,4 +1,4 @@
-<include file="bbs/Home/View/header.html"/>
+<include file="bbs/Home/View/layouts/header.html"/>
 <div id="box">
   <div id="left" class="fl"  style="margin-top:3px; overflow:hidden;">
     <div class="clear"></div>
@@ -9,10 +9,11 @@
         <h4 class="videotitle"><span class="fl">PHP视频下载(如果视频无法下载，请联系QQ:2449444817)</span></h4>
 		<div class="blueline1">
 <div class="blueline1">
+    <?php foreach($array as $key => $val){?>
 <table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
 <tbody>
 	<tr>
-	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="__PUBLIC__/images/20141020170847739.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="__ROOT__/video/<?php echo $val['v_image']?>" width="96" /></td>
 	<td bgcolor="#ffffff" width="272">
 	<div class="jiaochengmz"><a href="http://bbs.itcast.cn/thread-33681-1-1.html?php" target="_blank"><span style="color:#ff0000;">8小时打造专属电子留言板系统</span></a></div>
 	</td>
@@ -20,61 +21,25 @@
 	</tr>
 	<tr>
 	<td bgcolor="#ffffff">
-	<div class="jianshi">主讲：罗弟华 <span class="blue">PHP公开课 </span></div>
+	<div class="jianshi">主讲：<?php echo $val['s_name']?> <span class="blue"><?php echo $val['c_title']?> </span></div>
 	</td>
 	<td align="right" bgcolor="#ffffff">
-	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare">
+          <span class="bds_more">分享到：</span>
+        <a class="bds_qzone" title="分享到QQ空间" href="#"></a>
+        <a class="bds_tsina" title="分享到新浪微博" href="#"></a>
+        <a class="bds_tqq" title="分享到腾讯微博" href="#"></a>
+        <a class="bds_renren" title="分享到人人网" href="#"></a>
+        <a class="shareCount" href="#" title="累计分享755次">755</a>  
+        </div>
 	</td>
 	</tr>
 </tbody>
 </table>
-<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
-<tbody>
-	<tr>
-	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="__PUBLIC__/images/phprm.jpg" width="96" /></td>
-	<td bgcolor="#ffffff" width="272">
-	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/caa9b58b/37b1/47f6/98e3/bd3600c98cfc.shtml">PHP入门到精通教程</a></div>
-	</td>
-	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/caa9b58b/37b1/47f6/98e3/bd3600c98cfc.shtml"><img border="0" height="26" src="__PUBLIC__/images/download.jpg" width="56" /></a></td>
-	</tr>
-	<tr>
-	<td bgcolor="#ffffff">
-	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
-	</td>
-	<td align="right" bgcolor="#ffffff">
-	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
-	</td>
-	</tr>
-</tbody>
-</table>
-<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
-<tbody>
-	<tr>
-	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="__PUBLIC__/images/20120928154653630.jpg" width="96" /></td>
-	<td bgcolor="#ffffff" width="272">
-	<div class="jiaochengmz"><a href="http://www.itcast.cn/news/20120913/18063829105.shtml">PHP入门到精通教程配套笔记</a></div>
-	</td>
-	<td align="right" bgcolor="#ffffff" width="215"><a href="http://www.itcast.cn/news/20120913/18063829105.shtml"><img border="0" height="26" src="__PUBLIC__/images/download.jpg" width="56" /></a></td>
-	</tr>
-	<tr>
-	<td bgcolor="#ffffff">
-	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
-	</td>
-	<td align="right" bgcolor="#ffffff">
-	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
-	</td>
-	</tr>
-</tbody>
-</table>
-
-
-
-
-
-
+<?php } ?>
 </div>
 <br />
-
+<div class='page'><?php echo $page?></div>
         </div>
       </div>
     </div>
@@ -161,16 +126,4 @@ QQ影音</a></p>
 </div>
 <div class="clear"></div>
 <!-- 页面底部 -->
-<div id="footer">
-  <div class="footer_info">
-    <p class="fl mar"><!--<img src="/images/footlogo.jpg" />--></p>
-    <p><a href="http://www.itcast.cn/channel/introduction.shtml" target="_blank" style="padding-left:0;">传智简介</a>|<a href="http://weibo.com/itcast" target="_blank">官方微博</a>|<a href="http://bbs.itcast.cn/forum.php?mod=forumdisplay&fid=175&filter=typeid&typeid=180" target="_blank">传智快报</a>|<a href="http://bbs.itcast.cn/forum.php?mod=forumdisplay&fid=184&filter=typeid&typeid=217" target="_blank">校区活动</a>|<a href="http://www.itcast.cn/channel/campus.shtml" target="_blank">校园生活</a>|<a href="http://www.itcast.cn/channel/personnel.shtml" target="_blank">人才服务</a>|<a href="http://www.itcast.cn/channel/flow.shtml" target="_blank">汇款账号</a>|<a href="http://www.itcast.cn/channel/zhaopin.shtml" target="_blank">招贤纳士</a>|<a href="http://www.itcast.cn/channel/contact.shtml" target="_blank">联系我们</a></p>
-    <p>传智播客-专业java培训、.net培训、php培训、iOS培训、C++培训、网页设计、平面设计、网络营销培训机构</p>
-    <p>版权所有 2006 - 2014 北京传智播客教育科技有限公司</p>
-    <p>地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096</p>
-    <p>电话：010-82935150/60/70 传真：010-82935100 邮箱: zhanghj+itcast.cn</p>
-    <p><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备08001421号</a><a href="http://www.bjgaj.gov.cn/web/" target="_blank">京公网安备110108007702</a></p>
-	<p style="padding-top:10px"><a style="overflow:hidden; margin-right:6px; padding:0;" href="http://webscan.360.cn/index/checkwebsite/url/www.itcast.cn" target="_blank"><img width="124" height="47" src="__PUBLIC__/images/360anquan.png"></a><a style="overflow:hidden; margin-right:6px; padding:0;" href="http://t.knet.cn/index_new.jsp" target="_blank"><img width="124" height="47" src="__PUBLIC__/images/cx.png"></a><a target="_blank" href="http://www.bj.cyberpolice.cn/index.do" style="padding:0;"><img width="124" height="47" src="__PUBLIC__/images/jc.png"></a></p>
-  </div>
-</div>
-<include file="bbs/Home/View/footer.html"/>
+<include file="bbs/Home/View/layouts/footer.html"/>

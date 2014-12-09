@@ -59,7 +59,7 @@ class PositionController extends Controller{
         public function delete_position(){
             $position= M("zhiwu"); 
             $z_id=$_GET['z_id'];
-            var_dump($z_id);
+            //var_dump($z_id);
             $res=$position->where("z_id=$z_id")->delete(); // 删除id为5的用户数据
             if($res){
                 redirect("position_list");
