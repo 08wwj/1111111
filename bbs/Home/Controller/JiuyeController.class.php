@@ -14,6 +14,13 @@ class JiuyeController extends Controller {
     }
     public function index(){
         $Jiuye = M("jiuye");
+        $count = $Jiuye->count();
+        $Page  = new \Think\Page($count,5);
+        $show  = $Page->show();
+        $list  = $Jiuye->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+        
         $Jiuye1 = M("jiuye1");
         $list = $Jiuye->select();
         $res = $Jiuye1->order('add_time desc')->limit(4)->select();
@@ -29,5 +36,41 @@ class JiuyeController extends Controller {
        // var_dump($li);die;
         $this->assign("li",$li);
         $this->display();
+    }
+    public function search(){
+        $Jiuye = M("jiuye");
+        $student_name = $_POST['student_name'];
+        $school_name = $_POST['school_name'];
+        if(!empty($student_name)) {
+              //  $where .= " and student_name like '%$student_name%'";
+            $map['student_name'] = array('like',"%{$student_name}%");
+        }
+        if(!empty($school_name)) {
+          //      $where .= " and school_name like '%$school_name%'";
+            $map['school_name'] = array('like',"%{$school_name}%");
+        }
+        session('name',$map);  
+ 
+        $map1 = session('name');
+       // var_dump($map1);
+        $count = $Jiuye -> where($map1) -> count();
+       // echo $count;
+        $Page = new \Think\Page($count,2);
+        foreach($map1 as $key=>$val)
+        {    
+            $Page->parameter   .=   "$key=".urlencode($val).'&';
+        }
+        $list = $Jiuye -> limit($Page -> firstRow,$Page -> listRows)
+        -> where($map1)
+        -> select();
+        //var_dump($list);
+        $showpage = $Page -> show();
+  
+        $Jiuye1 = M("jiuye1");
+        $res = $Jiuye1->select();
+        $this->assign('res',$res);
+        $this -> assign('list',$list);
+        $this -> assign('page',$showpage);
+        $this->display('index');
     }
 }

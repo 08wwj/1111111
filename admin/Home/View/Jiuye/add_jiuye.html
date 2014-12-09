@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="/bbs/admin/Public/css/public.css" />
 	<title></title>
 </head>
+    <script type="text/javascript" src="__PUBLIC__/js/My97DatePicker/WdatePicker.js"></script>
 <body>
 	<form action="{:U('Home/Jiuye/add_jiuye_pro')}" method="post">
 		<table class="table">
@@ -28,9 +29,8 @@
 			</tr>
 			<tr>
 				<td>入职时间</td>
-				<td>
-					<input name="job_time" id="txt_ReachEnd" readonly="readonly" onfocus="WdatePicker({skin:'whyGreen'})" type="text" class="text-3" />
-
+				<td>		
+				<input name="job_time" id="txt_ReachEnd" readonly="readonly" onfocus="WdatePicker({skin:'whyGreen'})" type="text" class="text-3" />
 				</td>
 			</tr>
 			<tr>

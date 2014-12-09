@@ -4,7 +4,7 @@ html {
 * {
 	margin: 0px; padding: 0px;
 }
-body{font-size:12px; font-family:"ËÎÌå"; line-height:24px; margin:0; height:100%;  min-height: 100%; _height:100%; background:#F1F1F1 url(../images/bg.gif) 0 1px repeat-x; color:#515151}
+body{font-size:12px; font-family:"ï¿½ï¿½ï¿½ï¿½"; line-height:24px; margin:0; height:100%;  min-height: 100%; _height:100%; background:#F1F1F1 url(../images/bg.gif) 0 1px repeat-x; color:#515151}
 .fl {
 	float: left;
 }
@@ -24,7 +24,7 @@ ul {
 	list-style: none;
 }
 a {
-	color: rgb(35, 110, 178); font-family: "ËÎÌå"; text-decoration: none;
+	color: rgb(35, 110, 178); font-family: "ï¿½ï¿½ï¿½ï¿½"; text-decoration: none;
 }
 a:hover {
 	color: rgb(255, 0, 0); text-decoration: none;
@@ -186,7 +186,7 @@ h6 {
 	padding: 13px 22px; height: auto; overflow: hidden;
 }
 .title1 {
-	background: url("../images/jiantou.jpg") no-repeat right; padding-bottom: 3px; font-family: "ºÚÌå"; font-size: 20px; font-weight: normal; border-bottom-color: rgb(233, 233, 233); border-bottom-width: 1px; border-bottom-style: solid;
+	background: url("../images/jiantou.jpg") no-repeat right; padding-bottom: 3px; font-family: "ï¿½ï¿½ï¿½ï¿½"; font-size: 20px; font-weight: normal; border-bottom-color: rgb(233, 233, 233); border-bottom-width: 1px; border-bottom-style: solid;
 }
 .title2 {
 	background: url("../images/bglefttitle.jpg") no-repeat left 5px; color: rgb(38, 120, 192); line-height: 32px; padding-left: 20px; margin-top: 20px; margin-bottom: 15px;
@@ -951,10 +951,10 @@ span.time {
 	height: auto; overflow: hidden; padding-bottom: 10px; margin-top: 10px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dashed;
 }
 .kxdl-title {
-	background: url("../images/kxdl-title.jpg") no-repeat; height: 44px; color: rgb(3, 115, 197); line-height: 44px; padding-left: 40px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 18px; font-weight: bold;
+	background: url("../images/kxdl-title.jpg") no-repeat; height: 44px; color: rgb(3, 115, 197); line-height: 44px; padding-left: 40px; font-family: "Î¢ï¿½ï¿½ï¿½Åºï¿½"; font-size: 18px; font-weight: bold;
 }
 .kxdl-font1 {
-	text-align: center; color: rgb(3, 115, 197); font-family: "Î¢ÈíÑÅºÚ"; font-size: 24px; font-weight: bold; margin-bottom: 10px;
+	text-align: center; color: rgb(3, 115, 197); font-family: "Î¢ï¿½ï¿½ï¿½Åºï¿½"; font-size: 24px; font-weight: bold; margin-bottom: 10px;
 }
 .kxdl-font2 {
 	text-indent: 2em; padding-top: 10px; padding-bottom: 5px; font-size: 14px; margin-bottom: 15px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dashed;
@@ -978,13 +978,13 @@ span.time {
 	height: 100%; overflow: hidden;
 }
 .kxdl-title2 {
-	background: url("../images/kxdl-title2.jpg") no-repeat; height: 44px; color: rgb(3, 115, 197); line-height: 44px; padding-left: 40px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 18px; font-weight: bold;
+	background: url("../images/kxdl-title2.jpg") no-repeat; height: 44px; color: rgb(3, 115, 197); line-height: 44px; padding-left: 40px; font-family: "Î¢ï¿½ï¿½ï¿½Åºï¿½"; font-size: 18px; font-weight: bold;
 }
 .kcnr-wenben p {
 	text-indent: 2em; font-size: 14px; margin-bottom: 10px;
 }
 .kcnr-title {
-	background: url("../images/kcnr-title.jpg") no-repeat; height: 45px; color: rgb(3, 115, 197); line-height: 45px; padding-left: 40px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 18px; font-weight: bold;
+	background: url("../images/kcnr-title.jpg") no-repeat; height: 45px; color: rgb(3, 115, 197); line-height: 45px; padding-left: 40px; font-family: "Î¢ï¿½ï¿½ï¿½Åºï¿½"; font-size: 18px; font-weight: bold;
 }
 .kcnr-title1 {
 	background: url("../images/kcnr-title1.jpg") no-repeat; height: 31px; color: rgb(255, 0, 0); line-height: 31px; padding-left: 20px; font-size: 14px; font-weight: bold; margin-top: 20px; margin-bottom: 20px;
@@ -1071,7 +1071,7 @@ span.time {
 	background: url("../images/sanjiao-1.jpg") no-repeat left; height: 29px; line-height: 29px; padding-left: 10px;
 }
 .toubu-font1 {
-	color: rgb(4, 115, 196); padding-left: 20px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 22px; font-weight: bold;
+	color: rgb(4, 115, 196); padding-left: 20px; font-family: "Î¢ï¿½ï¿½ï¿½Åºï¿½"; font-size: 22px; font-weight: bold;
 }
 .toubu {
 	width: 310px;
@@ -1119,7 +1119,7 @@ span.time {
 	width: 270px; float: right;
 }
 .sp_text h1 {
-	color: rgb(3, 115, 197); font-family: "ºÚÌå"; font-size: 16px;
+	color: rgb(3, 115, 197); font-family: "ï¿½ï¿½ï¿½ï¿½"; font-size: 16px;
 }
 .xzdz {
 	width: 235px;
@@ -1209,3 +1209,4 @@ a:hover {
 	padding: 3px;
 	font-weight: 400;
 }
+
