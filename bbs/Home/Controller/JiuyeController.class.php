@@ -28,19 +28,18 @@ class JiuyeController extends Controller {
         $this->display();
     }
     public function search(){
-        require("/sphinxapi.php");
         $Jiuye = M("jiuye");
         $student_name = $_POST['student_name'];
         $school_name = $_POST['school_name'];
       //  $where = " where 1=1";
-        /*
-        $sphinxapi = new SphinxClient(); 
+      //  import("./Public/sphinxapi");
+        $sphinxapi = new \Think\sphinxapi; 
         $sphinxapi->SetServer('127.0.0.1', 9312); 
         $sphinxapi->SetMatchMode(SPH_MATCH_ALL);
         $result = $sphinxapi->Query($student_name,"*"); 
         var_dump($result);die;
         $key = array_keys($result['matches']);
-        $id = implode(',',$key);*/
+        $id = implode(',',$key);
         if(!empty($student_name)) {
               //  $where .= " and student_name like '%$student_name%'";
             $map['student_name'] = array('like',"%{$student_name}%");
