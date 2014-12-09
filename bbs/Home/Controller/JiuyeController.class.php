@@ -32,8 +32,8 @@ class JiuyeController extends Controller {
         $student_name = $_POST['student_name'];
         $school_name = $_POST['school_name'];
       //  $where = " where 1=1";
-      //  import("./Public/sphinxapi");
-        $sphinxapi = new \Think\sphinxapi; 
+		include "/sphinxapi.php";
+        $sphinxapi = new SphinxClient(); 
         $sphinxapi->SetServer('127.0.0.1', 9312); 
         $sphinxapi->SetMatchMode(SPH_MATCH_ALL);
         $result = $sphinxapi->Query($student_name,"*"); 
