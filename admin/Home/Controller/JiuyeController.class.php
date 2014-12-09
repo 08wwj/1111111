@@ -23,7 +23,7 @@ class JiuyeController extends Controller{
         public function show_jiuye(){
             $Jiuye = M('jiuye');
             $count = $Jiuye->count();
-            $Page  = new \Think\Page($count,2);
+            $Page  = new \Think\Page($count,5);
             $show  = $Page->show();
             $list = $Jiuye->limit($Page->firstRow.','.$Page->listRows)->select();
             $this->assign('list',$list);
@@ -131,7 +131,7 @@ class JiuyeController extends Controller{
             }else{// 上传成功
                 $data['image']=$info['image']['savename'];
                 //$res = $Jiuye1->add($data);
-                $res = $Jiuye1->where('id=$id')->setField($data);
+                $res = $Jiuye1->where('id=$id')->save($data);
                 var_dump($res);die;
                 if($res){
                     $this->success('修改成功！',U('Jiuye/show_upload'));
