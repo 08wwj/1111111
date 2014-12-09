@@ -17,15 +17,15 @@ class JiuyeController extends Controller {
         $count = $Jiuye->count();
         $Page  = new \Think\Page($count,5);
         $show  = $Page->show();
-        $list  = $Jiuye->limit($Page->firstRow.','.$Page->listRows)->select();
+         $valuea = S('bbb');
+        if(!empty($valuea)){
+         $array=$valuea;
+       echo "<script>alert('来自缓存');</script>";
+        }else{
+        $list  = $Jiuye->cache('bbb')->limit($Page->firstRow.','.$Page->listRows)->select();
+        }
         $this->assign('list',$list);
         $this->assign('page',$show);
-        
-        $Jiuye1 = M("jiuye1");
-        $list = $Jiuye->select();
-        $res = $Jiuye1->order('add_time desc')->limit(4)->select();
-        $this->assign('list',$list);
-        $this->assign('res',$res);
         $this->display();
     }
     public function detial(){

@@ -83,7 +83,7 @@
 				    </ul>
 				    <ul class="con">
 				        <li class="nav_u">
-				        	<a href="" class="pos">回收站</a>				        	
+				        	<a href="<?php echo U('shizi/huishou_shizi');?>" class="pos">回收站</a>				        	
 				        </li> 
 				    </ul>   
 				</div>

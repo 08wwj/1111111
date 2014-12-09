@@ -17,7 +17,13 @@ class ShipinController extends Controller {
         $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $show       = $Page->show();// 分页显示输出
         // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-        $array = $video->limit($Page->firstRow.','.$Page->listRows)->select();
+        $valuea = S('aaa');
+        if(!empty($valuea)){
+         $array=$valuea;
+       echo "<script>alert('来自缓存');</script>";
+        }else{
+         $array = $video->cache('aaa')->limit($Page->firstRow.','.$Page->listRows)->select();  
+        }
         $this->assign('page',$show);// 赋值分页输出
        //var_dump($array);
      $this->assign('array',$array);

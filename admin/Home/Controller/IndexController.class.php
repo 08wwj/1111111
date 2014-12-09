@@ -159,7 +159,7 @@ class IndexController extends Controller
         }
         //显示文章表单并查询分类
         public function article_show(){
-                $this->ll();
+             $this->ll();
            $category=M('category'); 
            $array = $category->select();
 	//print_r($array);
@@ -183,7 +183,7 @@ class IndexController extends Controller
 	}
         //将文章列表显示
         public function article_list(){
-                $this->ll();
+             $this->ll();
             $article=M('article');
             $count      = $article->count();// 查询满足要求的总记录数
             $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
