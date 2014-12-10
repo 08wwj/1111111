@@ -5,6 +5,12 @@ use Think\Controller;
 header("Content-Type:text/html;charset=utf-8"); 
 class PositionController extends Controller{
 	
+      public function __construct() {
+        parent::__construct();
+          if(empty($_SESSION['name'])){
+           $this->redirect('index/login');  
+        }
+    }
 	public function add_position(){
 		$this->display("add_position");
 	}

@@ -3,7 +3,13 @@
 namespace Home\Controller;
 use Think\Controller;
 header("Content-Type:text/html;charset=utf-8"); 
-class ShiziController extends Controller{	
+class ShiziController extends Controller{
+      public function __construct() {
+        parent::__construct();
+          if(empty($_SESSION['name'])){
+           $this->redirect('index/login');  
+        }
+    }
 	public function add_shizi(){
             $position=M('zhiwu');
             $list=$position->select();
@@ -57,7 +63,7 @@ class ShiziController extends Controller{
             }else{
                $data['is_show']=1;
             }
-            $shizi->where("s_id=$s_id")->save($data);      
+            $shizi->where("s_id='$s_id'")->save($data);      
         } 
         public function is_del(){
             $shizi=M('shizi');
@@ -118,7 +124,7 @@ class ShiziController extends Controller{
             $this->assign('page',$show);// 赋值分页输出
             $this->display('huishou_shizi');
         }
-        public function hiufu(){
+        public function huifu(){
             $shizi=M('shizi');
             $s_id=$_POST['s_id']; 
             $data['is_del']=1;            

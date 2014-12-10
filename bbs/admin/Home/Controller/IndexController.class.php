@@ -299,6 +299,34 @@ class IndexController extends Controller
         $this->redirect('Index/nav_list');    
         }
         }
+        //修改导航
+        public function edit_nav(){
+            $nav=M('nav');
+             $n_id=$_GET['n_id'];
+             $array=$nav-> where("n_id='".$n_id."'")->find();
+             $this->assign('array',$array);
+            $this->display();
+        }
+        //将修改数据添加到数据库
+        public function edit_nav_pro(){
+            $this->ll();
+            $nav=M('nav');
+            $title=$_POST['title'];
+            $url=$_POST['url'];
+            $content=$_POST['content'];
+            $order=$_POST['order'];
+            $n_id=$_POST['n_id'];
+            $data['n_name']=$title;
+            $data['n_url']=$url;
+            $data['isset']=$isset;
+            $data['n_content']=$content;
+            $data['ordera']=$order;
+             $data=array('n_name'=>$title,'n_content'=>$content,'n_url'=>$url,'ordera'=>$order);
+             $aa=$nav->where("n_id='$n_id'")->setField($data); //更新个别字段的值，可以使用setField方法。
+             if($aa){
+            $this->redirect('Index/nav_list'); 
+        } 
+        }
         //添加视频表单
         public function add_video(){
           $this->ll();

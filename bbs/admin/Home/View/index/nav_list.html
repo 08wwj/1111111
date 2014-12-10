@@ -26,13 +26,12 @@
 			<td><?php echo $val['n_url']?></td>
 			<td><?php echo $val['n_content']?></td>
 			<td>
-				<a href="">[置顶]</a>
                                 <?php if($val['isset']==1){?>
                                 <a href="__URL__/nav_isseta/n_id/<?php echo $val['n_id']?>">[关闭]</a>
                                 <?php }else{ ?>
                                 <a href="__URL__/nav_issetb/n_id/<?php echo $val['n_id']?>">[开启]</a>
                                 <?php } ?>
-                               <a href="">[编辑]</a>
+                               <a href="__URL__/edit_nav/n_id/<?php echo $val['n_id']?>">[编辑]</a>
 				<a href="__URL__/nav_delete/n_id/<?php echo $val['n_id']?>">[删除]</a>
 			</td>
 		</tr>

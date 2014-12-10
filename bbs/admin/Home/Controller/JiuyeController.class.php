@@ -3,7 +3,14 @@ namespace Home\Controller;
 use Think\Controller;
 header("Content-Type:text/html;charset=utf-8"); 
 class JiuyeController extends Controller{	
-	public function add_jiuye(){
+    public function __construct() {
+        parent::__construct();
+          if(empty($_SESSION['name'])){
+           $this->redirect('index/login');  
+        }
+    }
+
+    public function add_jiuye(){
             $this->display();
 	}
         public function add_jiuye_pro(){

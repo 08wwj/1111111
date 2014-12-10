@@ -4,6 +4,12 @@ use Think\Controller;
 //use Think\Storage\Driver;
 class QuestionController extends Controller
 {
+      public function __construct() {
+        parent::__construct();
+          if(empty($_SESSION['name'])){
+           $this->redirect('index/login');  
+        }
+    }
     //列表显示
     public function index()
     {

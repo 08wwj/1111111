@@ -3,6 +3,12 @@ namespace Home\Controller;
 use Think\Controller;
 class ArticleController extends Controller
 {
+      public function __construct() {
+        parent::__construct();
+          if(empty($_SESSION['name'])){
+           $this->redirect('index/login');  
+        }
+    }
 	//将栏目添加到数据库
 	public function add_article_pro(){
 	$name=$_POST['name'];

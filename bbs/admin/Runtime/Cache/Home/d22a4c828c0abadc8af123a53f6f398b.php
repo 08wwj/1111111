@@ -37,7 +37,7 @@
 	</div>
 </body>
 </html>
-<script src="/bbs/Public/js/jq.js"></script>
+<script src="/bbs/Public/js/jquery.js"></script>
 <script>
     function is_show(s_id,is_show){
         $.ajax({

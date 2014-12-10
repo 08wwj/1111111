@@ -36,11 +36,11 @@
 	</div>
 </body>
 </html>
-<script src="/bbs/Public/js/jq.js"></script>
+<script src="/bbs/Public/js/jquery.js"></script>
 <script>
     function huifu(s_id){
         $.ajax({
-            url:"<?php echo U('shizi/hiufu');?>",
+            url:"<?php echo U('shizi/huifu');?>",
             data:{"s_id":s_id},
             type:"post",
             success:function(){
