@@ -13,11 +13,11 @@
 			<td class="th" colspan="10">查看博文</td>
 		</tr>
 		<tr>
-			<td class="tdLittle1">AID</td>
+			<td>AID</td>
 			<td>标题</td>
-			<td class="tdLittle2">栏目名称</td>
-			<td class="tdLtitle4">创作时间</td>
-			<td class="tdLtitle7">操作</td>
+			<td>所属分类</td>
+			<td>创作时间</td>
+			<td>操作</td>
 		</tr>
             <?php foreach($array as $key => $val){?>
 		<tr>
@@ -26,9 +26,8 @@
 			<td><a href=""><?php echo $val['c_title']?></a></td>
 			<td><?php echo $val['a_time']?></td>
 			<td>
-				<a href="">[置顶]</a>
-				<a href="">[编辑]</a>
-				<a href="">[删除]</a>
+				<a href="__URL__/edit_article_show/id/<?php echo $val['id']?>">[编辑]</a>
+                                <a href="__URL__/article_delete/c_id/<?php echo $val['id']?>" class="del">[删除]</a>
 			</td>
 		</tr>
             <?php }?>

@@ -2,35 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-		<link rel="stylesheet" href="./css/public.css" />
+		<link rel="stylesheet" href="/bbs/admin/Public/css/public.css" />
 	<title></title>
 </head>
 <body>
-	<form action="" method="post">
+	<form action="__URL__/edit_category_pro" method="post">
 		<table class="table">
 			<tr >
 				<td class="th" colspan="2">修改栏目</td>
 			</tr>
 			<tr>
 				<td>栏目名称</td>
-				<td><input type="text" name=""/></td>
-			</tr>
-			<tr>
-				<td>开启状态</td>
-				<td>
-					<input type="radio" name="" value="1" checked="checked"/>开启
-					<input type="radio" name="" value="0" />关闭
-				</td>
-
-			</tr>
-			<tr>
-				<td>关键字</td>
-				<td><input type="text" name=""/></td>
+                                <td><input type="text" name="c_title" value="<?php echo $list['c_title']?>"/><input type="hidden" name="c_id" value="<?php echo $list['c_id']?>"/></td>
 			</tr>
 			<tr>
 				<td>描述</td>
 				<td>
-					<textarea name="" id="description" class="textarea"></textarea>
+					<textarea name="c_content" id="description" class="textarea"><?php echo $list['c_content']?></textarea>
 				</td>
 			</tr>
 			<tr>

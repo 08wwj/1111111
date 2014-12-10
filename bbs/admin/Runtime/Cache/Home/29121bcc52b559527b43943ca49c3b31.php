@@ -38,6 +38,10 @@
 				</td>
 			</tr>
 			<tr>
+				<td>排序</td>
+				<td>
+					<input type="text" name="order" class="order"/>
+				</td>
 			</tr>
 			<tr>
 				<td colspan="2">

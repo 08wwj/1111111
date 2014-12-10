@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+	<link rel="stylesheet" href="/bbs/admin/Public/css/public.css" />
+	<script type="text/javascript" src="/bbs/admin/Public/js/jquery-1.7.2.min.js"></script>	
+</head>
+<body>
+	<table class="table">
+		<tr>
+			<td class="th" colspan="20">个人形象列表</td>
+		</tr>
+		<tr class="tableTop">
+			<td class="tdLittle1">ID</td>
+			<td>形象描述</td>
+			<td>形象照片</td>
+                        <td>操作</td>
+		</tr>
+                <volist name="list" id="vo">
+		<tr>
+			<td>{$vo.id}</td>
+			<td>{$vo.description}</td>
+			<td><img src="/bbs/upload/{$vo.image}" width="100" height="100"></td>
+			<td>
+				<a href="{:U('Jiuye/delet')}?id={$vo.id}" class="del">删除</a>
+                                <a href="{:U('Jiuye/upd')}?id={$vo.id}" class="del">修改</a>
+			</td>
+		</tr>
+                </volist>
+	</table>
+	<div class="page">
+		{$page}
+	</div>
+</body>
+</html>

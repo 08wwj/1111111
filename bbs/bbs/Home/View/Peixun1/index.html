@@ -1,0 +1,118 @@
+<include file="bbs/Home/View/layouts/header.html"/>
+<div id="box">
+		    <div class="mbx">
+			<!-- Baidu share BEGIN -->
+    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+        <span class="bds_more">分享到：</span>
+        <a class="bds_sqq">QQ好友</a>
+		<a class="bds_qzone">QQ空间</a>
+		<a class="bds_tqq">腾讯微博</a>
+		<a class="bds_tsina">新浪微博</a>
+		<a class="bds_tieba">百度贴吧</a>
+		<a class="shareCount"></a>
+    </div>
+<!-- Baidu share END 需在页面底部添加baidushare.js -->
+			   <div style="padding-left:10px;float:left;">
+			     <b>其它学院入口：</b>  <img src="__PUBLIC__/images/sanjiao.jpg" /> <a href="http://net.itcast.cn">.net学院</a> <img src="__PUBLIC__/images/sanjiao.jpg" /> <a href="http://java.itcast.cn">java学院</a>  <img src="__PUBLIC__/images/sanjiao.jpg" /> <a href="http://icd.itcast.cn">网页平面设计学院</a>
+			   </div>
+			</div>
+			  <div id="left" class="fl"  style="margin-top:3px;">
+			<div><img src="__PUBLIC__/images/lefttop.gif"/></div>
+			<div class="jyjb">
+			<div><img src="__PUBLIC__/images/kcjs-tu.jpg" /></div>
+			 ﻿
+<div class="kcjs">
+<style type="text/css">
+.kcnr-table{ line-height:20px;}
+	.kcnr-table li{ list-style-image:url(__PUBLIC__/images/20120718144154342.jpg); margin-left:15px;;</style>
+</div>
+<ol>
+    <?php foreach($list as $k=>$v){?>
+    
+<li class="fl" style="width:141px;"><img src="__PUBLIC__/<?php echo $v['p_image'];?>" width="100" height="100"></li>
+<li class="fl jyjb-11-font1" style=" width:470px;"><b class="jyjb-11-font2"><a href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><?php echo $v['p_name']?></a></b>
+<p><?php echo $v['p_content']?></p>
+</li>
+
+</ol>
+<table border="0" cellpadding="0" cellspacing="0" class="kcnr-table" width="99%">
+<tbody>
+      <?php foreach($list1 as $k=>$val) { 
+        if($val['p_id']==$v['p_id']) {
+      ?>  
+      
+	<tr>
+	<td>PHP基础班课程名称</td>
+        
+	<td><strong><a href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><?php echo $val['k_name']?></a></strong></td>
+	</tr>
+	<tr>
+	<td width="22%"><br />
+	课程介绍</td>
+	<td width="78%">
+	<p></p>
+	<ul>
+	
+	<li><?php echo $val['k_content']?></li>
+	</ul>
+	</td>
+	</tr>
+        
+        <?php }
+        } ?>
+	
+</tbody>
+
+</table>
+<?php }?>
+<div class="page">
+			<?php echo $page; ?>
+		</div>
+<br />
+<br />
+
+			</div>
+			<div><img src="__PUBLIC__/images/leftbottom.gif"/></div>
+				<div></div>
+		</div>		
+		<div id="right" class="fl">			
+			<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">PHP培训开班信息</span></h4>
+			<div class="jyjb-left" >
+                <ul>
+ <?php foreach($list as $k1=>$v1){?>
+<li style="border-bottom: medium none; float: left; color: #515151"><a href="http://php.itcast.cn/php/course/base.shtml"><b><font style="color: #515151"><?php echo $v1['p_name']?></font></b></a></li>
+<br />
+</ul>
+
+<ul style="clear: both">
+   <?php foreach($list1 as $k=>$val) { 
+        if($val['p_id']==$v1['p_id']) {
+      ?>  
+    
+<li><a href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><span class="time jyjb-font2"><b></b></span><?php echo $val['k_name']?></a></li>
+ <?php }
+        } ?>
+</ul>
+<?php 
+} ?>
+<ul>
+			</div>
+			<div class="rightbottom"><img src="__PUBLIC__/images/rightbottom.jpg"/></div>
+			<h4 class="righttitle1 lianxi"><span class="fl"><span class="blue">课程</span>咨询</span></h4>
+			
+			<div class="rightkuang">
+			<dl>
+	<dt style="padding-bottom:20px;">
+		北京传智播客</dt>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="__PUBLIC__/images/qqmfst.jpg" width="99" /></a></dd>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="__PUBLIC__/images/qqkczx.jpg" width="99" /></a></dd>
+</dl>
+
+			<div class="clear"></div>	
+			</div>
+	  </div>
+	</div>		
+	<div class="clear"></div>
+	<include file="bbs/Home/View/layouts/footer.html"/>

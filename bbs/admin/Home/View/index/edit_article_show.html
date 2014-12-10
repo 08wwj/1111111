@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-		<link rel="stylesheet" href="./css/public.css" />
+		<link rel="stylesheet" href="/bbs/admin/Public/css/public.css" />
 	<title></title>
 
 </head>
 <body>
-	<form action="" method="post">
+	<form action="__URL__/edit_article_pro" method="post">
 		<table class="table">
 			<tr >
 				<td class="th" colspan="2">编辑博文</td>
@@ -15,20 +15,21 @@
 			<tr>
 				<td>博文标题</td>
 				<td>
-					<input type="text" name=""/>
+                                    <input type="text" name="a_title" value="<?php echo $list['a_title']?>"/>
+                                    <input type="hidden" name="id" value="<?php echo $list['id']?>"/>
 					
 				</td>
 			</tr>
 			<tr>
-				<td>缩略图</td>
-				<td><input type="file" name=""/></td>
-			</tr>
-			<tr>
 				<td>栏目</td>
 				<td>
-					<select name='cid'>
-						<option value="">====选择栏目====</option>
-						
+					<select name='c_title'>
+                                            <?php foreach($array as $key => $val){?>
+                                            <?php if($list['c_title']==$val['c_title']){?>
+                                            <option value="<?php echo $val['c_title']?>" selected><?php echo $val['c_title']?></option>
+						<?php }else{ ?>
+                                              <option value="<?php echo $val['c_title']?>"><?php echo $val['c_title']?></option>
+                                               <?php }} ?>
 					</select>
 				</td>
 
@@ -36,13 +37,7 @@
 			<tr>
 				<td>内容</td>
 				<td>
-					<textarea id="editor_id" name="" style="width:700px;height:300px;"></textarea>
-				</td>
-			</tr>
-			<tr>
-				<td>点击次数</td>
-				<td>
-					<input type="" name='' value=""/>
+					<textarea id="editor_id" name="content" style="width:700px;height:300px;"><?php echo $list['a_content']?></textarea>
 				</td>
 			</tr>
 			<tr>

@@ -15,6 +15,7 @@
 		<tr>
 			<th>CID</th>
 			<th>栏目名称</th>
+                        <th>修改时间</th>
 			<th>操作</th>
 		</tr>
 		<?php foreach($data as $key => $val){ ?>
@@ -22,9 +23,10 @@
 
 			<td><?php echo $val['c_id']?></td>
 			<td><a href=""><?php echo $val['c_title']?></a></td>
+                        <td><a href=""><?php echo $val['c_time']?></a></td>
 			<td>
-				<a href="">[编辑]</a>
-				<a href="" class="del">[删除]</a>
+				<a href="<?php echo U('Home/index/edit_category_show');?>?c_id=<?php echo $val['c_id']?>">[编辑]</a>
+                                <a href="<?php echo U('Home/index/category_delete');?>?c_id=<?php echo $val['c_id']?>" class="del">[删除]</a>
 			</td>
 		</tr>
 		<?php }?>

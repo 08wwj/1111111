@@ -20,8 +20,7 @@
 			<tr>
 				<td>栏目</td>
 				<td>
-					<select name='a_id'>
-                                           
+					<select name='a_id'> 
 						<option value="">====选择栏目====</option> 
                                                 <?php foreach($array as $key => $val){?>
                                                 <option value="<?php echo $val['c_title']?>"><?php echo $val['c_title']?></option>
